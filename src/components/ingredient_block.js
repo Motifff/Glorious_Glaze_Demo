@@ -3,10 +3,6 @@ import { useSpring, animated } from '@react-spring/web'
 import AdjustBlock from './adjust_block'
 
 function IngredientBlock(props) {
-    const [number, setNumber] = useState({
-
-    })
-
     const styles = useSpring({
         from: {
             opacity: 1
@@ -15,14 +11,6 @@ function IngredientBlock(props) {
             opacity: props.activate === true ? 1 : 0.5
         }
     })
-
-    const handleClick = () => {
-
-    }
-
-    const handleDrag = () => {
-
-    }
 
     return (
         <animated.div
@@ -34,14 +22,12 @@ function IngredientBlock(props) {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                paddingLeft: 9 * props.scale,
-                paddingRight: 9 * props.scale,
                 gap: 10 * props.scale,
                 ...styles
             }}
             onClick={props.func}
         >
-            <AdjustBlock activate={true} scale={props.scale}>
+            <AdjustBlock name={props.name} value={props.value} func={props.func} number={props.number} activate={true} scale={props.scale}>
 
             </AdjustBlock>
             <div style={{

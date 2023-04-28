@@ -41,8 +41,7 @@ function RenderPanel(props) {
             >
                 <div
                     style={{
-                        position: 'absolute',
-                        left: 18 * props.scale,
+                        position: 'relative',
                         height: 36 * props.scale,
                         display: 'flex',
                         flexDirection: 'row',
@@ -84,13 +83,13 @@ function RenderPanel(props) {
                     display: 'flex',
                     flexDirection: 'row',
                     alignItems: 'center',
+                    justifyContent:'space-between',
                     gap: 10 * props.scale
                 }}
             >
                 <div
                     style={{
-                        position: 'absolute',
-                        left: 18 * props.scale,
+                        position: 'relative',
                         height: 36 * props.scale,
                         display: 'flex',
                         flexDirection: 'row',
@@ -121,19 +120,18 @@ function RenderPanel(props) {
                 </div>
                 <div
                     style={{
-                        position: 'absolute',
-                        right: 18 * props.scale,
+                        position: 'relative',
+                        right:  0* props.scale,
                         height: 36 * props.scale,
                         display: 'flex',
                         flexDirection: 'row',
                         alignItems: 'center',
-                        gap: 10 * props.scale
                     }}
                 >
                     <NormalButton
                         backArrow={true}
                         activate={true}
-                        back={false}
+                        back={true}
                         wordDisplay={false}
                         word="贴图"
                         scale={props.scale}
