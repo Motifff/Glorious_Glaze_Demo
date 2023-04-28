@@ -23,8 +23,8 @@ function RenderPanel(props) {
     return (
         <animated.div
             style={{
-                width: props.scale * 354,
-                height: props.scale * 354,
+                width: props.scale * props.w,
+                height: props.scale * props.h,
                 backgroundColor: '#E8FFFB',
                 padding:18*props.scale,
                 boxSizing: 'border-box'
