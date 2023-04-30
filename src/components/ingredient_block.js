@@ -27,14 +27,36 @@ function IngredientBlock(props) {
             }}
             onClick={props.func}
         >
-            <AdjustBlock name={props.name} value={props.value} func={props.func} number={props.number} activate={true} scale={props.scale}>
-
+            <AdjustBlock
+                name={props.name}
+                value={props.value}
+                func={props.func}
+                number={props.number}
+                activate={true}
+                scale={props.scale}>
             </AdjustBlock>
             <div style={{
                 width: props.scale * 144,
                 height: props.scale * 80,
                 backgroundImage: `url(${null})`,
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'flex-start',
             }}>
+                <animated.div style={{
+                    width: 'min-content',
+                    height: props.scale * 60,
+                    position: 'relative',
+                    left:props.scale * 10,
+                    display: 'flex',
+                    alignItems:'center',
+                    flexDirection: 'column',
+                    fontFamily: 'Open Sans',
+                    fontWeight: '700',
+                    fontSize: props.scale * 64,
+                }}>
+                    {props.value}
+                </animated.div>
             </div>
         </animated.div>
     );

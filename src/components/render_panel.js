@@ -18,8 +18,6 @@ function RenderPanel(props) {
         }
     })
 
-
-
     return (
         <animated.div
             style={{
@@ -51,22 +49,24 @@ function RenderPanel(props) {
                 >
                     <NormalButton
                         backArrow={true}
-                        activate={true}
+                        activate={!props.isTexture}
                         back={false}
-                        wordDisplay={true}
-                        word="模型"
+                        wordDisplay={!props.isTexture}
+                        word='模型'
                         scale={props.scale}
                         image={ModelIcon}
+                        func = {props.clickFunc}
                     >
                     </NormalButton>
                     <NormalButton
                         backArrow={true}
-                        activate={false}
+                        activate={props.isTexture}
                         back={false}
-                        wordDisplay={false}
-                        word="贴图"
+                        wordDisplay={props.isTexture}
+                        word='贴图'
                         scale={props.scale}
                         image={BrushIcon}
+                        func = {props.clickFunc}
                     >
                     </NormalButton>
                 </div>
@@ -99,22 +99,24 @@ function RenderPanel(props) {
                 >
                     <NormalButton
                         backArrow={true}
-                        activate={true}
+                        activate={!props.isLight}
                         back={false}
                         wordDisplay={false}
-                        word="贴图"
+                        word='旋转'
                         scale={props.scale}
-                        image={LightIcon}
+                        image={RotateIcon}
+                        func = {props.clickFunc}
                     >
                     </NormalButton>
                     <NormalButton
                         backArrow={true}
-                        activate={true}
+                        activate={props.isLight}
                         back={false}
                         wordDisplay={false}
-                        word="贴图"
+                        word='光照'
                         scale={props.scale}
-                        image={RotateIcon}
+                        image={LightIcon}
+                        func = {props.clickFunc}
                     >
                     </NormalButton>
                 </div>

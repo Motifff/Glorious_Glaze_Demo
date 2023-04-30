@@ -4,6 +4,7 @@ import './App.css';
 import NormalButton from './components/normal_button'
 import RenderPanel from './components/render_panel';
 import IngredientBlock from './components/ingredient_block';
+import Upload from './assets/icon=upload.svg'
 
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -13,7 +14,9 @@ function App() {
   })
 
   const [state, setState] = useState({
-    ing:[50,50,50,50]
+    ing: [50, 50, 50, 50],
+    isTexture: false,
+    isLight: false,
   })
 
   useEffect(() => {
@@ -31,13 +34,28 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleIngClick = (target,nowNum) =>{
+  const panelClick = (c) => {
+    if (c === '模型' || c === '贴图') {
+      setState({
+        ...state,
+        isTexture: !state.isTexture
+      })
+    }
+    if (c === '旋转' || c === '光照') {
+      setState({
+        ...state,
+        isLight: !state.isLight
+      })
+    }
+  }
+
+  const handleIngClick = (target, nowNum) => {
     let setIng = state.ing;
-    setIng[target]=nowNum;
-    console.log(target,nowNum)
+    setIng[target] = nowNum;
+    console.log(target, nowNum)
     setState({
       ...state,
-      ing:setIng,
+      ing: setIng,
     })
   }
 
@@ -47,28 +65,31 @@ function App() {
       style={{
         width: windowSize.scale * 390,
         height: windowSize.scale * 844,
-        background: "#0000FF",
-        margin: 'auto'
+        background: "rgba(255, 255, 255, 1)",
+        margin: 'auto',
       }}>
       <animated.div
         name='middle'
         style={{
-          backgroundColor: '#FF00FF',
-          position:'relative',
+          backgroundColor: 'rgba(255, 255, 255, 1)',
+          position: 'relative',
           width: windowSize.scale * 390,
           height: windowSize.scale * 708,
           top: windowSize.scale * 46,
-          display:'flex',
-          flexDirection:'column',
+          display: 'flex',
+          flexDirection: 'column',
           gap: windowSize.scale * 18,
           paddingLeft: windowSize.scale * 18,
           paddingRight: windowSize.scale * 18,
           boxSizing: 'border-box',
-      }}>
+        }}>
         <RenderPanel
           w={354}
           h={354}
           scale={windowSize.scale}
+          isTexture={state.isTexture}
+          isLight={state.isLight}
+          clickFunc={panelClick}
         ></RenderPanel>
         <div
           style={{
@@ -84,6 +105,32 @@ function App() {
           <IngredientBlock name={3} value={state.ing[3]} scale={windowSize.scale} activate={true} func={handleIngClick}></IngredientBlock>
         </div>
       </animated.div >
+      <animated.div
+        style={{
+          position: 'absolute',
+          top: windowSize.scale * 754,
+          width: windowSize.scale * 390,
+          display: 'flex',
+          flexDirection: 'row',
+          boxSizing: 'border-box',
+          justifyContent: 'center',
+          borderTop: '2px solid rgba(181, 244, 234, 1)',
+          padding: windowSize.scale * 16,
+          height: windowSize.scale * 68,
+        }}
+      >
+        <NormalButton
+          backArrow={true}
+          activate={true}
+          back={false}
+          wordDisplay={true}
+          expand={true}
+          word="上传渲染"
+          scale={windowSize.scale}
+          image={Upload}
+        >
+        </NormalButton>
+      </animated.div>
     </div >
   );
 }

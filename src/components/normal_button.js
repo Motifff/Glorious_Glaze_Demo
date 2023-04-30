@@ -5,19 +5,21 @@ import backArrow from '../assets/icon=back.svg'
 function NormalButton(props) {
     const styles = useSpring({
         from: {
-            opacity: 1
+            opacity: 1,
         },
         to: {
-            opacity: props.activate === true ? 1 : 0.5
+            opacity: props.activate === true ? 1 : 0.5,
         }
     })
 
-
+    const handleClick = () =>{
+        props.func(props.word)
+    }
 
     return (
         <animated.div
             style={{
-                width: 'min-content',
+                width: props.expand ? null :'min-content',
                 height: props.scale * 36,
                 background: '#B5F4EA',
                 borderRadius: 18 * props.scale,
@@ -30,7 +32,7 @@ function NormalButton(props) {
                 gap: 10 * props.scale,
                 ...styles
             }}
-            onClick={props.func}
+            onClick={handleClick}
         >
             {props.back === true ? <div style={{
                 width: props.scale * 16,
