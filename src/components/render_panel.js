@@ -2,6 +2,7 @@ import React from 'react'
 import { useSpring, animated } from '@react-spring/web'
 import NormalButton from './normal_button'
 import PreviewBlock from './preview_block'
+import CrackExample from './crack_example'
 import ModelIcon from '../assets/icon=model.svg'
 import BrushIcon from '../assets/icon=brush.svg'
 import LightIcon from '../assets/icon=light.svg'
@@ -77,9 +78,7 @@ function RenderPanel(props) {
                     height: props.scale*246
                 }}
             >
-                <PreviewBlock>
-                    
-                </PreviewBlock>
+                <CrackExample></CrackExample>
             </div>
             <div
                 style={{
