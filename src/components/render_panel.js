@@ -26,7 +26,7 @@ function RenderPanel(props) {
                 width: props.scale * props.w,
                 height: props.scale * props.h,
                 backgroundColor: '#E8FFFB',
-                padding:18*props.scale,
+                padding: 18 * props.scale,
                 boxSizing: 'border-box'
             }}
         >
@@ -57,7 +57,7 @@ function RenderPanel(props) {
                         word='模型'
                         scale={props.scale}
                         image={ModelIcon}
-                        func = {props.clickFunc}
+                        func={props.clickFunc}
                     >
                     </NormalButton>
                     <NormalButton
@@ -68,17 +68,18 @@ function RenderPanel(props) {
                         word='贴图'
                         scale={props.scale}
                         image={BrushIcon}
-                        func = {props.clickFunc}
+                        func={props.clickFunc}
                     >
                     </NormalButton>
                 </div>
             </div>
             <div
                 style={{
-                    height: props.scale*246
+                    height: props.scale * 246
                 }}
             >
-                <CrackExample></CrackExample>
+                <CrackExample>  
+                </CrackExample>
             </div>
             <div
                 style={{
@@ -86,7 +87,7 @@ function RenderPanel(props) {
                     display: 'flex',
                     flexDirection: 'row',
                     alignItems: 'center',
-                    justifyContent:'space-between',
+                    justifyContent: 'space-between',
                     gap: 10 * props.scale
                 }}
             >
@@ -108,7 +109,7 @@ function RenderPanel(props) {
                         word='旋转'
                         scale={props.scale}
                         image={RotateIcon}
-                        func = {props.clickFunc}
+                        func={props.clickFunc}
                     >
                     </NormalButton>
                     <NormalButton
@@ -119,14 +120,14 @@ function RenderPanel(props) {
                         word='光照'
                         scale={props.scale}
                         image={LightIcon}
-                        func = {props.clickFunc}
+                        func={props.clickFunc}
                     >
                     </NormalButton>
                 </div>
                 <div
                     style={{
                         position: 'relative',
-                        right:  0* props.scale,
+                        right: 0 * props.scale,
                         height: 36 * props.scale,
                         display: 'flex',
                         flexDirection: 'row',

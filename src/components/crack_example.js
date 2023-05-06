@@ -64,19 +64,19 @@ function ShaderBox() {
 
   return (
     <>
-      <mesh scale={[3, 3, 3]} ref={ref}>
+      <mesh scale={[3.5, 0.1, 3.5]} ref={ref}>
         <boxGeometry />
         <customMaterial key={CustomMaterial.key} toneMapped={true} colorStart={'#505050'} colorEnd={'black'} />
       </mesh>
       <ContactShadows 
-        position={[0, -4, 0]} 
+        position={[0, -1, 0]} 
         opacity={0.5} 
-        scale={10} 
+        scale={12} 
         blur={2.5} 
         far={4} 
       >
       </ContactShadows>
-      <OrbitControls ref={controlsRef} />
+      <OrbitControls enableZoom={true} ref={controlsRef} maxPolarAngle={Math.PI / 12 * 4}/>
     </>
   )
 }
