@@ -101,6 +101,6 @@ const CustomMaterial = shaderMaterial(
   `
 )
 
-extend({ CustomMaterial })
+extend({ CustomMaterial1 })
 
-export { CustomMaterial }
+export { CustomMaterial1 }

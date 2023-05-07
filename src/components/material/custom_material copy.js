@@ -1,9 +1,6 @@
-import * as THREE from 'three'
 import { extend } from '@react-three/fiber'
 import { shaderMaterial } from '@react-three/drei'
 import glsl from 'babel-plugin-glsl/macro'
-import vShader from '../assets/shaders/vs.glsl'
-import fShader from '../assets/shaders/fg.glsl'
 
 const CustomMaterial = shaderMaterial(
   {
@@ -18,7 +15,6 @@ const CustomMaterial = shaderMaterial(
   glsl`
       #pragma glslify: cnoise3 = require(glsl-noise/classic/3d.glsl) 
       uniform float time;
-      uniform bumpScale
 
       varying vec2 vUv;
       void main() {

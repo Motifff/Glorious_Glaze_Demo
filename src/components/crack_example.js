@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { PresentationControls,OrbitControls, ContactShadows } from '@react-three/drei'
-import { CustomMaterial } from './custom_material'
+import { CustomMaterial } from './material/custom_material'
 
 function ShaderPlane() {
   const ref = useRef()
@@ -45,7 +45,6 @@ function PbShaderBox() {
 
 function ShaderBox() {
   const ref = useRef()
-  const { width, height } = useThree((state) => state.viewport)
   const controlsRef = useRef()
 
   useFrame((state, delta) => {
