@@ -29,7 +29,8 @@ function Tile(props) {
             <div
                 style={{
                     width: props.scale * 106,
-                    height: props.scale * 14,                    display: 'flex',
+                    height: props.scale * 14,
+                    display: 'flex',
                     flexDirection: 'row',
                 }}
             >
@@ -45,28 +46,28 @@ function Tile(props) {
                     }}
                 >
                 </div>
-                <div
+                <text
                     style={{
-                        width: props.scale * 68,
-                        height: props.scale * 12,
+                        width: props.scale * 72,
+                        height: props.scale * 14,
                         position: 'relative',
-                        left: props.scale * 24,
-                        top: 0,
+                        left: props.scale * 20,
                         border: '1px dashed #000000',
                         borderRadius: props.scale * 2,
-                        textAlign: 'left',
+                        boxSizing:'border-box',
+                        padding:props.scale * 1,
                         fontFamily: 'Noto Sans SC',
-                        fontStyle: 'normal',
                         fontWeight: 700,
                         display: 'flex',
                         flexDirection: 'row',
                         alignItems: 'center',
+                        justifyContent:'center',
                         fontSize: props.scale * 10,
-                        lineHeight: props.scale * 14,
+                        lineHeight:props.scale *12,
                     }}
                 >
-                    釉彩一号测试..
-                </div>
+                    釉彩一号测..
+                </text>
             </div>
         </div>
     );

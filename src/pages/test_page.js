@@ -10,7 +10,9 @@ function TestPage(props) {
             style={{
                 padding:props.scale * 18,
                 boxSizing: 'border-box',
-                gap: props.scale * 18,
+                display:'flex',
+                flexWrap:'wrap',
+                gap:props.scale * 18
             }}
         >
             <Tile
@@ -18,6 +20,14 @@ function TestPage(props) {
                 image={A1B1}
             />
             <Tile
+                scale={props.scale}
+                image={A1B1}
+            />
+             <Tile
+                scale={props.scale}
+                image={A1B1}
+            />
+             <Tile
                 scale={props.scale}
                 image={A1B1}
             />
