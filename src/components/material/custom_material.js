@@ -14,6 +14,7 @@ const CustomMaterial = shaderMaterial(
   }  
       `,
   glsl`
+  
   #pragma glslify: cnoise3 = require(glsl-noise/classic/3d.glsl)
   uniform float time;
   varying vec2 vUv;
@@ -86,7 +87,7 @@ const CustomMaterial = shaderMaterial(
   void main(){
     float noise = cnoise3(vec3(vUv * 50.0, time * 0.2));
     
-    vec3 c = voronoi( 8.0* vUv );
+    vec3 c = voronoi( 9.0* vUv );
 
     vec3 col = c.x*vec3(1.0);
 

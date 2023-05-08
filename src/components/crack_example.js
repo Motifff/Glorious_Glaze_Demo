@@ -80,7 +80,7 @@ function ShaderBox() {
   )
 }
 
-const CrackExample = () => {
+const CrackExample = (props) => {
   return (
     <Canvas shadows>
       <ShaderBox></ShaderBox>
