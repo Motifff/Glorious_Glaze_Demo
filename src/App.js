@@ -64,7 +64,7 @@ function App() {
       style={{
         width: windowSize.scale * 390,
         height: windowSize.scale * 844,
-        background: "rgba(100, 100, 100, 1)",
+        background: "rgba(100, 100, 100, 0)",
         margin: 'auto',
       }}>
       <TestPage

@@ -18,18 +18,30 @@ function TestPage(props) {
             <Tile
                 scale={props.scale}
                 image={A1B1}
+                check={false}
+                selectable={true}
+                edit={false}
             />
             <Tile
                 scale={props.scale}
                 image={A1B1}
+                check={false}
+                selectable={false}
+                edit={false}
             />
              <Tile
                 scale={props.scale}
                 image={A1B1}
+                check={false}
+                selectable={false}
+                edit={false}
             />
              <Tile
                 scale={props.scale}
                 image={A1B1}
+                check={false}
+                selectable={false}
+                edit={false}
             />
         </div>
     );
