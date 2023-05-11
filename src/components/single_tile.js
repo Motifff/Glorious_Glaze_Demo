@@ -1,30 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web'
 
-
+// scale || selected || isSelectable || image
 function Tile(props) {
     const checkStyles = useSpring({
         from: {
-            background: props.check?'#FFFFFF':'#000000',
-            boxShadow: props.check?'inset 0px 0px 2px 0px rgba(0, 0, 0, 0.25)':'inset 0px 0px 0px 2px rgba(255, 255, 255, 1)',
+            background: props.selected?'#FFFFFF':'#000000',
+            boxShadow: props.selected?'inset 0px 0px 2px 0px rgba(0, 0, 0, 0.25)':'inset 0px 0px 0px 2px rgba(255, 255, 255, 1)',
         },
         to: {
-            background: props.check?'#000000':'#FFFFFF',
-            boxShadow: props.check?'inset 0px 0px 0px 2px rgba(255, 255, 255, 1)':'inset 0px 0px 2px rgba(0, 0, 0, 0.25)',
+            background: props.selected?'#000000':'#FFFFFF',
+            boxShadow: props.selected?'inset 0px 0px 0px 2px rgba(255, 255, 255, 1)':'inset 0px 0px 2px rgba(0, 0, 0, 0.25)',
         }
     })
 
     const editStyles = useSpring({
         from: {
-            opacity: props.edit ? 0.5 : 1,
+            opacity: props.selected ? 1 : 0.5,
         },
         to: {
-            opacity: props.edit ? 1 : 0.5,
+            opacity: props.selected ? 0.5 : 1,
         },
     })
 
-    const checkResponce = () =>{
-        
+    const selectResponce = () =>{
+        //props.func(props.order)
     }
 
     return (
@@ -59,7 +59,7 @@ function Tile(props) {
                 }}
             >
                 <animated.div
-                    onClick={checkResponce}
+                    onClick={selectResponce}
                     style={{
                         ...checkStyles,
                         width: props.scale * 12,
@@ -68,7 +68,7 @@ function Tile(props) {
                         border: '1px solid #000000',
                         borderRadius: props.scale * 8,
                         top: props.scale,
-                        opacity:props.selectable?1:0,
+                        opacity:props.isSelectable ? 1:0,
                     }}
                 >
                 </animated.div>
@@ -78,7 +78,7 @@ function Tile(props) {
                         height: props.scale * 14,
                         position: 'relative',
                         left: props.scale * 20,
-                        border: props.selectable ? '1px dashed #000000':null,
+                        border: props.selected ? '1px dashed #000000':null,
                         borderRadius: props.scale * 2,
                         boxSizing: 'border-box',
                         padding: props.scale * 1,
