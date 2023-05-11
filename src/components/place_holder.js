@@ -8,7 +8,7 @@ import iconDown from '../assets/icon=down.svg'
 // this is for read section data and render tiles
 function Section(props) {
     const [state, setState] = useState({
-        ifSelectable: false,
+        ifSelectable: true,
         stack: false,
     })
 
@@ -116,6 +116,7 @@ function Section(props) {
                     display: 'flex',
                     flexDirection: 'row',
                     alignItems: 'center',
+                    justifyItems: 'center',
                     justifyContent: 'space-between',
                 }}
             >
@@ -140,28 +141,76 @@ function Section(props) {
                 >
                     {props.data.sectionName}
                 </text>
-                <animated.div>
+                <animated.div
+                    style={{
+                        height: props.scale * 22,
+                        display: 'flex',
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: props.scale * 8
+                    }}
+                >
                     <div
                         style={{
                             width: props.scale * 18,
                             height: props.scale * 18,
                             backgroundImage: `url(${listIcon})`,
-                            backgroundSize: 'cover'
+                            backgroundSize: 'cover',
                         }}
                     >
                     </div>
                     {
-                        state.ifSelectable?
-                        <div>
+                        state.ifSelectable ?
                             <div
                                 style={{
-                                    width:props.scale * 48,
-                                    height:props.scale * 18,
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: props.scale * 8
                                 }}
-                            ></div>
-                            <div></div>
-                        </div>
-                        :null
+                            >
+                                <div
+                                    style={{
+                                        width: props.scale * 48,
+                                        height: props.scale * 18,
+                                        background: '#C9CDD4',
+                                        borderRadius: props.scale * 100,
+                                        fontFamily: 'Noto Sans SC',
+                                        fontWeight: 600,
+                                        fontSize: props.scale * 14,
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'center',
+                                        justifyContent: 'center'
+                                    }}
+                                >
+                                    编辑
+                                </div>
+                                <div
+                                    style={{
+                                        width: props.scale * 48,
+                                        height: props.scale * 18,
+                                        background: '#C9CDD4',
+                                        borderRadius: props.scale * 100,
+                                        fontFamily: 'Noto Sans SC',
+                                        fontWeight: 600,
+                                        fontSize: props.scale * 14,
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'center',
+                                        justifyContent: 'center'
+                                    }}
+                                >
+                                    全选
+                                </div>
+                            </div>
+                            : null
                     }
                 </animated.div>
             </div>
