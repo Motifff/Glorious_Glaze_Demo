@@ -66,6 +66,7 @@ function Tile(props) {
                         height: props.scale * 12,
                         position: 'relative',
                         border: '1px solid #000000',
+                        boxSizing: 'border-box',
                         borderRadius: props.scale * 8,
                         top: props.scale,
                         opacity:props.isSelectable ? 1:0,
@@ -87,12 +88,12 @@ function Tile(props) {
                         display: 'flex',
                         flexDirection: 'row',
                         alignItems: 'center',
-                        justifyContent: 'center',
+                        justifyContent: 'right',
                         fontSize: props.scale * 10,
                         lineHeight: props.scale * 12,
                     }}
                 >
-                    釉彩一号测..
+                    {props.name}
                 </text>
             </animated.div>
         </div>

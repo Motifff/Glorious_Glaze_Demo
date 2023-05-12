@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web'
-import { FixedSizeList as List } from "react-window";
 import Section from '../components/place_holder'
 import A1B1 from '../assets/tile_image/A1B1.png'
 import A1B2 from '../assets/tile_image/A1B2.png'

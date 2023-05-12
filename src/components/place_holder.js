@@ -8,7 +8,7 @@ import iconDown from '../assets/icon=down.svg'
 // this is for read section data and render tiles
 function Section(props) {
     const [state, setState] = useState({
-        ifSelectable: true,
+        ifSelectable: false,
         stack: false,
     })
 
@@ -28,6 +28,10 @@ function Section(props) {
         height: state.stack ? ((Math.floor(props.data.tiles.length / 3) + 1) * (130 + 18) - 18) * props.scale : props.scale * 130
     })
 
+    const toggleStyle = useSpring({
+        width: state.ifSelectable ? props.scale * 48 : 0,
+    })
+
     const handleStack = () => {
         let anti = !state.stack
         setState({
@@ -40,8 +44,17 @@ function Section(props) {
 
     }
 
+    const handleList = () => {
+        let s = !state.ifSelectable
+        setState({
+            ...state,
+            ifSelectable: s
+        })
+        console.log(state)
+    }
+
     const likeList = () => {
-        const items = props.data.tiles.map((tile) => <Tile scale={props.scale} image={tile.image} selected={tile.selected} isSelectable={tile.isSelectable} />);
+        const items = props.data.tiles.map((tile) => <Tile name={tile.name} scale={props.scale} image={tile.image} selected={tile.selected} isSelectable={state.ifSelectable} />);
         return (
             <div
                 style={{
@@ -91,7 +104,7 @@ function Section(props) {
     }
 
     const itemList = () => {
-        const items = props.data.tiles.map((tile) => <Tile scale={props.scale} image={tile.image} selected={tile.selected} isSelectable={tile.isSelectable} />);
+        const items = props.data.tiles.map((tile) => <Tile name={tile.name} scale={props.scale} image={tile.image} selected={tile.selected} isSelectable={state.ifSelectable} />);
         return (
             <div
                 style={{
@@ -152,6 +165,7 @@ function Section(props) {
                     }}
                 >
                     <div
+                        onClick={handleList}
                         style={{
                             width: props.scale * 18,
                             height: props.scale * 18,
@@ -160,58 +174,47 @@ function Section(props) {
                         }}
                     >
                     </div>
-                    {
-                        state.ifSelectable ?
-                            <div
+                    <animated.div
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: props.scale * 8
+                        }}
+                    >
+                        <animated.div
+                            style={{
+                                ...toggleStyle,
+                                height: props.scale * 18,
+                                background: '#C9CDD4',
+                                borderRadius: props.scale * 100,
+                                fontFamily: 'Noto Sans SC',
+                                fontWeight: 600,
+                                fontSize: props.scale * 14,
+                                display: 'flex',
+                                flexDirection: 'row',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                overflow:'clip'
+                            }}
+                        >
+                            <animated.div
                                 style={{
-                                    display: 'flex',
-                                    flexDirection: 'row',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: props.scale * 8
+                                    width:props.scale * 48,
+                                    height: props.scale * 22,
+                                    background: '#C9CDD4',                                    borderRadius: props.scale * 100,
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: 600,
+                                    fontSize: props.scale * 14,
+                                    textAlign:'center',
+                                    justifyContent:'center'
                                 }}
                             >
-                                <div
-                                    style={{
-                                        width: props.scale * 48,
-                                        height: props.scale * 18,
-                                        background: '#C9CDD4',
-                                        borderRadius: props.scale * 100,
-                                        fontFamily: 'Noto Sans SC',
-                                        fontWeight: 600,
-                                        fontSize: props.scale * 14,
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
-                                        justifyContent: 'center'
-                                    }}
-                                >
-                                    编辑
-                                </div>
-                                <div
-                                    style={{
-                                        width: props.scale * 48,
-                                        height: props.scale * 18,
-                                        background: '#C9CDD4',
-                                        borderRadius: props.scale * 100,
-                                        fontFamily: 'Noto Sans SC',
-                                        fontWeight: 600,
-                                        fontSize: props.scale * 14,
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
-                                        justifyContent: 'center'
-                                    }}
-                                >
-                                    全选
-                                </div>
-                            </div>
-                            : null
-                    }
+                                全选
+                            </animated.div>
+                        </animated.div>
+                    </animated.div>
                 </animated.div>
             </div>
             {
