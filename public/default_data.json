@@ -1,0 +1,21 @@
+{
+    "modeHis": false,
+        "data": [
+        {
+                "tiles": [
+                {
+                        "order": 1,
+                        "name": "釉彩一号",
+                        "image": "./tile_image/A1B1.png",
+                        "selected": false
+                },
+                {
+                    "order": 2,
+                    "name": "釉彩一号",
+                    "image": "./tile_image/A1B1.png",
+                    "selected": false
+                }
+                ]
+        }
+    ]
+}

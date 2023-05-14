@@ -57,8 +57,8 @@ function ShaderBox() {
     const azimuthalAngle = controlsRef.current.getAzimuthalAngle()
 
     // Log the angles to the console
-    console.log('polar angle:', polarAngle)
-    console.log('azimuthal angle:', azimuthalAngle)
+    //console.log('polar angle:', polarAngle)
+    //console.log('azimuthal angle:', azimuthalAngle)
   })
 
   return (

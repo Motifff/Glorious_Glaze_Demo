@@ -24,7 +24,7 @@ function Tile(props) {
     })
 
     const selectResponce = () =>{
-        //props.func(props.order)
+        props.func(props.sectionName,props.order)
     }
 
     return (
@@ -61,7 +61,6 @@ function Tile(props) {
                 <animated.div
                     onClick={selectResponce}
                     style={{
-                        ...checkStyles,
                         width: props.scale * 12,
                         height: props.scale * 12,
                         position: 'relative',
@@ -70,10 +69,11 @@ function Tile(props) {
                         borderRadius: props.scale * 8,
                         top: props.scale,
                         opacity:props.isSelectable ? 1:0,
+                        ...checkStyles,
                     }}
                 >
                 </animated.div>
-                <text
+                <div
                     style={{
                         width: props.scale * 72,
                         height: props.scale * 14,
@@ -94,7 +94,7 @@ function Tile(props) {
                     }}
                 >
                     {props.name}
-                </text>
+                </div>
             </animated.div>
         </div>
     );

@@ -34,6 +34,4 @@ function PreviewBlock(props) {
         </Canvas>
     )
 }
-
-
 export default PreviewBlock;

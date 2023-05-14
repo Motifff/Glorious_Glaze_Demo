@@ -19,7 +19,7 @@ function NormalButton(props) {
     return (
         <animated.div
             style={{
-                width: props.expand ? null :'min-content',
+                width: 'min-content',
                 height: props.scale * 36,
                 background: '#B5F4EA',
                 borderRadius: 18 * props.scale,

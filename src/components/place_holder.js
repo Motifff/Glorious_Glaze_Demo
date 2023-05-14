@@ -8,17 +8,11 @@ import iconDown from '../assets/icon=down.svg'
 // this is for read section data and render tiles
 function Section(props) {
     const [state, setState] = useState({
+        sectionName: props.data.sectionName,
         ifSelectable: false,
         stack: false,
+        selectedContent: [],
     })
-
-    const likeSelect = () => {
-
-    }
-
-    const deleteSelect = () => {
-
-    }
 
     const rotateIcon = useSpring({
         transform: !state.stack ? 'rotate(0deg)' : 'rotate(180deg)'
@@ -40,21 +34,31 @@ function Section(props) {
         })
     }
 
-    const handleSelect = () => {
-
+    const handleAllSelect = () => {
+        props.func(state.sectionName, false)
     }
 
     const handleList = () => {
-        let s = !state.ifSelectable
         setState({
             ...state,
-            ifSelectable: s
+            ifSelectable: !state.ifSelectable
         })
-        console.log(state)
+        if (!state.isSelectable) {
+            props.func(state.sectionName, true)
+        }
     }
 
     const likeList = () => {
-        const items = props.data.tiles.map((tile) => <Tile name={tile.name} scale={props.scale} image={tile.image} selected={tile.selected} isSelectable={state.ifSelectable} />);
+        const items = props.data.tiles.map((tile) =>
+            <Tile
+                order={tile.order}
+                name={tile.name}
+                scale={props.scale}
+                image={tile.image}
+                selected={tile.selected}
+                isSelectable={state.ifSelectable}
+                func={props.eachFunc}
+                sectionName={state.sectionName} />);
         return (
             <div
                 style={{
@@ -66,7 +70,6 @@ function Section(props) {
                 <animated.div
                     style={{
                         width: props.scale * 354,
-                        boxSizing: 'border-box',
                         display: 'flex',
                         flexDirection: 'row',
                         flexWrap: state.stack ? 'wrap' : 'nowrap',
@@ -104,7 +107,17 @@ function Section(props) {
     }
 
     const itemList = () => {
-        const items = props.data.tiles.map((tile) => <Tile name={tile.name} scale={props.scale} image={tile.image} selected={tile.selected} isSelectable={state.ifSelectable} />);
+        const items = props.data.tiles.map((tile) =>
+            <Tile
+                order={tile.order}
+                name={tile.name}
+                scale={props.scale}
+                image={tile.image}
+                selected={tile.selected}
+                isSelectable={state.ifSelectable}
+                func={props.eachFunc}
+                sectionName={state.sectionName}
+            />);
         return (
             <div
                 style={{
@@ -133,7 +146,7 @@ function Section(props) {
                     justifyContent: 'space-between',
                 }}
             >
-                <text
+                <div
                     style={{
                         height: props.scale * 22,
                         position: 'relative',
@@ -153,8 +166,8 @@ function Section(props) {
                     }}
                 >
                     {props.data.sectionName}
-                </text>
-                <animated.div
+                </div>
+                <div
                     style={{
                         height: props.scale * 22,
                         display: 'flex',
@@ -174,7 +187,7 @@ function Section(props) {
                         }}
                     >
                     </div>
-                    <animated.div
+                    <div
                         style={{
                             display: 'flex',
                             flexDirection: 'row',
@@ -184,38 +197,37 @@ function Section(props) {
                         }}
                     >
                         <animated.div
+                            onClick={handleAllSelect}
                             style={{
                                 ...toggleStyle,
                                 height: props.scale * 18,
                                 background: '#C9CDD4',
                                 borderRadius: props.scale * 100,
-                                fontFamily: 'Noto Sans SC',
-                                fontWeight: 600,
-                                fontSize: props.scale * 14,
                                 display: 'flex',
                                 flexDirection: 'row',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                overflow:'clip'
+                                overflow: 'clip'
                             }}
                         >
                             <animated.div
                                 style={{
-                                    width:props.scale * 48,
+                                    width: props.scale * 48,
                                     height: props.scale * 22,
-                                    background: '#C9CDD4',                                    borderRadius: props.scale * 100,
+                                    background: '#C9CDD4',
+                                    borderRadius: props.scale * 100,
                                     fontFamily: 'Noto Sans SC',
                                     fontWeight: 600,
                                     fontSize: props.scale * 14,
-                                    textAlign:'center',
-                                    justifyContent:'center'
+                                    textAlign: 'center',
+                                    justifyContent: 'center'
                                 }}
                             >
                                 全选
                             </animated.div>
                         </animated.div>
-                    </animated.div>
-                </animated.div>
+                    </div>
+                </div>
             </div>
             {
                 props.data.type === 'like' ?
@@ -223,6 +235,13 @@ function Section(props) {
                     :
                     itemList()
             }
+            <animated.div
+                style={{
+
+                }}
+            >
+
+            </animated.div>
         </div>
     )
 }
