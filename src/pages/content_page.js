@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useSpring, animated } from '@react-spring/web'
+import { useSpring, animated, update } from '@react-spring/web'
 import Section from '../components/place_holder'
 import A1B1 from '../assets/tile_image/A1B1.png'
 import A1B2 from '../assets/tile_image/A1B2.png'
 import A1B3 from '../assets/tile_image/A1B3.png'
 import SortBar from '../components/sort_bar';
+import NormalButton from '../components/normal_button';
+import UploadModelIcon from '../assets/icon=upload_model.svg'
+import LabIcon from '../assets/icon=lab.svg'
 
 //data -> like data/lib data/history
 //mode -> Like/His F/T
@@ -243,6 +246,46 @@ function TestPage(props) {
                     scale={props.scale}
                 >
                 </SortBar>
+            </div>
+            <div
+                style={{
+                    width: props.scale * 354,
+                    height: props.scale * 68,
+                    borderTop: '2px solid #B5F4EA',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    boxSizing: 'border-box',
+                    paddingLeft: props.scale * 8,
+                    paddingRight: props.scale * 8,
+                    paddingTop: props.scale * 16,
+                    paddingBottom: props.scale * 16,
+                }}
+            >
+                <NormalButton
+                    backArrow={true}
+                    activate={true}
+                    back={true}
+                    wordDisplay={true}
+                    expand={true}
+                    word="返回"
+                    scale={props.scale}
+                    image={LabIcon}
+                >
+                </NormalButton>
+                <NormalButton
+                    width={props.scale * 220}
+                    backArrow={true}
+                    activate={false}
+                    disable={true}
+                    back={false}
+                    wordDisplay={true}
+                    expand={true}
+                    word="上传模型"
+                    scale={props.scale}
+                    image={UploadModelIcon}
+                >
+                </NormalButton>
             </div>
         </div>
     );

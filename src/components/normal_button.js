@@ -12,17 +12,20 @@ function NormalButton(props) {
         }
     })
 
-    const handleClick = () =>{
-        props.func(props.word)
+    const handleClick = () => {
+        if(props.disable !== true){
+            props.func(props.word)
+        }
     }
 
     return (
         <animated.div
             style={{
-                width: 'min-content',
+                width: props.width !== null ? props.width : 'min-content',
                 height: props.scale * 36,
                 background: '#B5F4EA',
                 borderRadius: 18 * props.scale,
+                boxSizing:'border-box',
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -45,8 +48,8 @@ function NormalButton(props) {
                 style={{
                     backgroundImage: `url(${props.image})`,
                     backgroundSize: 'cover',
-                    width: 24*props.scale,
-                    height: 24*props.scale
+                    width: 24 * props.scale,
+                    height: 24 * props.scale
                 }}
             ></div>
             {props.wordDisplay === true ? <div style={{

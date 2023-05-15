@@ -15,10 +15,27 @@ function SortBar(props) {
 
     const [value, setValue] = useState('请输入');
 
-    const searchStyle = useSpring({
-        width: state.isSearching ? props.scale * 334 : props.scale * 42,
-    })
+    const [searchDisplay, setSearchDisplay] = useState(false);
 
+    const searchStyle = useSpring({
+        from: { width: state.isSearching ? props.scale * 42 : props.scale * 334 },
+        to: { width: state.isSearching ? props.scale * 334 : props.scale * 42 },
+        onStart:() => {
+            if(!state.isSearching){
+                setSearchDisplay(false)
+            }
+        },
+        onRest:() => {
+            if(state.isSearching){
+                setSearchDisplay(true)
+            }
+        }
+      });
+
+    const searchStyleContent = useSpring({
+        opacity: state.isSearching ? 1 : 0
+    })
+      
     const handleSearchClick = () => {
         setState(
             {
@@ -29,7 +46,13 @@ function SortBar(props) {
     }
 
     const handleChange = (e) => {
+        setValue(e.target.textContent)
+    }
 
+    const handleComposition = (e) => {
+        if (e.type === "compositionend") {
+            handleChange(e);
+        }
     }
 
     return (
@@ -44,7 +67,7 @@ function SortBar(props) {
                 direction: 'rtl',
             }}
         >
-            
+
             <animated.div
                 style={{
                     ...searchStyle,
@@ -84,11 +107,13 @@ function SortBar(props) {
                     >
                     </div>
                 }
-                {state.isSearching ?
-                    <div
+                {searchDisplay ?
+                    <animated.div
                         contentEditable={true}
-                        onInput={handleChange}
+                        onCompositionStart={handleComposition}
+                        onCompositionEnd={handleComposition}
                         style={{
+                            ...searchStyleContent,
                             width: props.scale * 80,
                             height: props.scale * 18,
                             fontSize: 16 * props.scale,
@@ -96,27 +121,31 @@ function SortBar(props) {
                             display: 'flex',
                             flexDirection: 'row',
                             alignItems: 'center',
-                            textAlign:'center',
-                            justifyContent:'center',
+                            textAlign: 'center',
+                            justifyContent: 'center',
                             fontFamily: 'Noto Sans SC',
                             fontWeight: '600',
+                            direction: 'ltr',
+                            unicodeBidi: 'plaintext',
                         }}
                     >
                         {value}
-                    </div>
+                    </animated.div>
                     : null
                 }
-                {state.isSearching ?
-                    <div
+                {searchDisplay ?
+                    <animated.div
                         onClick={handleSearchClick}
                         style={{
+                            ...searchStyleContent,
                             backgroundImage: `url(${backArrow})`,
                             backgroundSize: 'cover',
                             width: 24 * props.scale,
-                            height: 24 * props.scale
+                            height: 24 * props.scale,
+                            transform: 'rotate(180deg)',
                         }}
                     >
-                    </div>
+                    </animated.div>
                     : null
                 }
             </animated.div>
