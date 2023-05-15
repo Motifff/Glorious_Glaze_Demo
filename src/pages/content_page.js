@@ -12,9 +12,10 @@ import LabIcon from '../assets/icon=lab.svg'
 //data -> like data/lib data/history
 //mode -> Like/His F/T
 
-function TestPage(props) {
+function ContentPage(props) {
     const [state, setState] = useState({
         modeHis: false,
+        tileDisplay: false,
         data: [
             {
                 sectionName: "我的收藏",
@@ -205,6 +206,10 @@ function TestPage(props) {
         console.log(state)
     }
 
+    const tileDisplay = (tile, tileData)=>{
+
+    }
+
     return (
         <div
             style={{
@@ -264,7 +269,8 @@ function TestPage(props) {
             >
                 <NormalButton
                     backArrow={true}
-                    activate={true}
+                    activate={false}
+                    disable={true}
                     back={true}
                     wordDisplay={true}
                     expand={true}
@@ -291,4 +297,4 @@ function TestPage(props) {
     );
 }
 
-export default TestPage;
+export default ContentPage;

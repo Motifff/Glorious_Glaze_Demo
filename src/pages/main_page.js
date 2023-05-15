@@ -48,18 +48,20 @@ function MainPage(props) {
       <animated.div
         style={{
           position: 'absolute',
-          top: props.scale * 754,
-          width: props.scale * 390,
+          top: props.scale * 764,
+          left: props.scale * 32,
+          width: props.scale * 354,
+          height: props.scale * 68,
           display: 'flex',
           flexDirection: 'row',
           boxSizing: 'border-box',
           justifyContent: 'center',
           borderTop: '2px solid rgba(181, 244, 234, 1)',
           padding: props.scale * 16,
-          height: props.scale * 68,
         }}
       >
         <NormalButton
+          width={props.scale * 240}
           backArrow={true}
           activate={true}
           back={false}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web'
 import './App.css';
-import TestPage from './pages/content_page';
+import ContentPage from './pages/content_page';
 import MainPage from './pages/main_page';
 
 
@@ -65,21 +65,24 @@ function App() {
         width: windowSize.scale * 780,
         height: windowSize.scale * 844,
         background: "rgba(100, 100, 100, 0)",
+        boxSizing: 'content-box',
+        borderRadius: windowSize.scale * 36,
+        border: '10px solid rgba(175, 175, 175, 0.5)',
         display: 'flex',
         flexDirection: 'row',
         margin: 'auto',
         gap: windowSize.scale * 18,
       }}>
-       <MainPage
+      <MainPage
         scale={windowSize.scale}
         state={state}
         handleIngClick={handleIngClick}
         panelClick={panelClick}
       ></MainPage>
-      <TestPage
+      <ContentPage
         scale={windowSize.scale}
       >
-      </TestPage>
+      </ContentPage>
     </div>
   );
 }

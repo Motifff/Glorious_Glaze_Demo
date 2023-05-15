@@ -136,7 +136,8 @@ function RenderPanel(props) {
                 >
                     <NormalButton
                         backArrow={true}
-                        activate={true}
+                        activate={false}
+                        disable={true}
                         back={true}
                         wordDisplay={false}
                         word="贴图"
