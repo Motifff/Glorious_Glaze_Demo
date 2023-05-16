@@ -10,7 +10,6 @@ import backArrow from '../assets/icon=back.svg'
 function SortBar(props) {
     const [state, setState] = useState({
         isSearching: false,
-        isHistory: false,
     });
 
     const [value, setValue] = useState('请输入');
@@ -20,22 +19,22 @@ function SortBar(props) {
     const searchStyle = useSpring({
         from: { width: state.isSearching ? props.scale * 42 : props.scale * 334 },
         to: { width: state.isSearching ? props.scale * 334 : props.scale * 42 },
-        onStart:() => {
-            if(!state.isSearching){
+        onStart: () => {
+            if (!state.isSearching) {
                 setSearchDisplay(false)
             }
         },
-        onRest:() => {
-            if(state.isSearching){
+        onRest: () => {
+            if (state.isSearching) {
                 setSearchDisplay(true)
             }
         }
-      });
+    });
 
     const searchStyleContent = useSpring({
         opacity: state.isSearching ? 1 : 0
     })
-      
+
     const handleSearchClick = () => {
         setState(
             {
@@ -167,21 +166,36 @@ function SortBar(props) {
                             activate={true}
                             back={false}
                             wordDisplay={false}
-                            word='模型'
+                            word='过滤'
                             scale={props.scale}
                             image={filterImage}
                         >
                         </NormalButton>
-                        <NormalButton
-                            backArrow={false}
-                            activate={true}
-                            back={false}
-                            wordDisplay={false}
-                            word='贴图'
-                            scale={props.scale}
-                            image={preferImage}
-                        >
-                        </NormalButton>
+                        {!props.modeState?
+                            <NormalButton
+                                backArrow={false}
+                                activate={true}
+                                back={false}
+                                wordDisplay={false}
+                                word='喜欢'
+                                scale={props.scale}
+                                image={preferImage}
+                                func={props.switchFunc}
+                            >
+                            </NormalButton>
+                            :
+                            <NormalButton
+                                backArrow={false}
+                                activate={true}
+                                back={false}
+                                wordDisplay={false}
+                                word='历史'
+                                scale={props.scale}
+                                image={historyImage}
+                                func={props.switchFunc}
+                            >
+                            </NormalButton>
+                        }
                     </div> : null
             }
         </div >

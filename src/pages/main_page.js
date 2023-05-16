@@ -7,7 +7,11 @@ import Upload from '../assets/icon=upload.svg';
 
 function MainPage(props) {
   return (
-    <div>
+    <div
+      style={{
+        position:'relative'
+      }}
+    >
       <animated.div
         name='middle'
         style={{
@@ -48,8 +52,8 @@ function MainPage(props) {
       <animated.div
         style={{
           position: 'absolute',
-          top: props.scale * 764,
-          left: props.scale * 32,
+          top: props.scale * 754,
+          left: props.scale * 18,
           width: props.scale * 354,
           height: props.scale * 68,
           display: 'flex',

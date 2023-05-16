@@ -58,6 +58,7 @@ function Section(props) {
                 selected={tile.selected}
                 isSelectable={state.ifSelectable}
                 func={props.eachFunc}
+                func1={props.eachFunc1}
                 sectionName={state.sectionName} />);
         return (
             <div
@@ -116,6 +117,7 @@ function Section(props) {
                 selected={tile.selected}
                 isSelectable={state.ifSelectable}
                 func={props.eachFunc}
+                func1={props.eachFunc1}
                 sectionName={state.sectionName}
             />);
         return (

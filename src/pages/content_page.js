@@ -8,6 +8,7 @@ import SortBar from '../components/sort_bar';
 import NormalButton from '../components/normal_button';
 import UploadModelIcon from '../assets/icon=upload_model.svg'
 import LabIcon from '../assets/icon=lab.svg'
+import DisplayTile from '../components/display_tile';
 
 //data -> like data/lib data/history
 //mode -> Like/His F/T
@@ -16,6 +17,7 @@ function ContentPage(props) {
     const [state, setState] = useState({
         modeHis: false,
         tileDisplay: false,
+        tileDisplayData:null,
         data: [
             {
                 sectionName: "我的收藏",
@@ -128,6 +130,8 @@ function ContentPage(props) {
         ]
     })
 
+    const [displayTileData, setDisplayTileData] = useState({})
+
     const genSections = () => {
         const eachSection = state.data.map((each) =>
             <Section
@@ -135,7 +139,9 @@ function ContentPage(props) {
                 scale={props.scale}
                 data={each}
                 func={sectionSelect}
-                eachFunc={singleSelect}>
+                func1={switchMode}
+                eachFunc={singleSelect}
+                eachFunc1={tileDisplay}>
             </Section>)
         return (
             <div
@@ -206,8 +212,27 @@ function ContentPage(props) {
         console.log(state)
     }
 
-    const tileDisplay = (tile, tileData)=>{
+    const tileDisplay = (showState, tileData)=>{
+        if(showState){
+            setState({
+                ...state,
+                tileDisplay: true,
+                tileDisplayData: tileData,
+            })
+        }else{
+            setState({
+                ...state,
+                tileDisplay: false,
+                tileDisplayData: null,
+            })
+        }
+    }
 
+    const switchMode = () => {
+        setState({
+            ...state,
+            modeHis: !state.modeHis
+        })
     }
 
     return (
@@ -215,6 +240,7 @@ function ContentPage(props) {
             style={{
                 width: props.scale * 354,
                 height: props.scale * 844,
+                position:'relative',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: props.scale * 18,
@@ -249,6 +275,8 @@ function ContentPage(props) {
             >
                 <SortBar
                     scale={props.scale}
+                    modeState={state.modeHis}
+                    switchFunc={switchMode}
                 >
                 </SortBar>
             </div>
@@ -292,6 +320,19 @@ function ContentPage(props) {
                     image={UploadModelIcon}
                 >
                 </NormalButton>
+            </div>
+            <div
+                style={{
+                    position:'absolute',
+                    top:0,
+                    width: props.scale * 354,
+                    height: props.scale * 844,
+                }}
+            >
+                <DisplayTile
+                    scale = {props.scale}
+                >
+                </DisplayTile>
             </div>
         </div>
     );

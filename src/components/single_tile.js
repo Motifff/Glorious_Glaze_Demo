@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web'
 
 // scale || selected || isSelectable || image
-function Tile(props) {
+function Tile(props) {        
+    const [previewMode, setPreviewMode]=useState(false);
+    
     const checkStyles = useSpring({
         from: {
             background: props.selected?'#FFFFFF':'#000000',
@@ -28,17 +30,17 @@ function Tile(props) {
     }
 
     return (
-        <div
+        <animated.div
             style={{
                 width: props.scale * 106,
-                height: props.scale * 130,
+                height: 'min-content',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 gap: props.scale * 10,
             }}
         >
-            <div
+            <animated.div
                 style={{
                     width: props.scale * 106,
                     height: props.scale * 106,
@@ -48,7 +50,7 @@ function Tile(props) {
                     backgroundSize: 'cover',
                 }}
             >
-            </div>
+            </animated.div>
             <animated.div
                 style={{
                     width: props.scale * 106,
@@ -96,7 +98,7 @@ function Tile(props) {
                     {props.name}
                 </div>
             </animated.div>
-        </div>
+        </animated.div>
     );
 }
 
