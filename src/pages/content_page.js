@@ -17,7 +17,7 @@ function ContentPage(props) {
     const [state, setState] = useState({
         modeHis: false,
         tileDisplay: false,
-        tileDisplayData:null,
+        tileDisplayData: null,
         data: [
             {
                 sectionName: "我的收藏",
@@ -212,14 +212,14 @@ function ContentPage(props) {
         console.log(state)
     }
 
-    const tileDisplay = (showState, tileData)=>{
-        if(showState){
+    const tileDisplay = (showState, tileData) => {
+        if (showState) {
             setState({
                 ...state,
                 tileDisplay: true,
                 tileDisplayData: tileData,
             })
-        }else{
+        } else {
             setState({
                 ...state,
                 tileDisplay: false,
@@ -238,101 +238,112 @@ function ContentPage(props) {
     return (
         <div
             style={{
-                width: props.scale * 354,
+                position: 'relative',
+                width: props.scale * 390,
                 height: props.scale * 844,
-                position:'relative',
                 display: 'flex',
-                flexDirection: 'column',
-                gap: props.scale * 18,
+                flexDirection: 'row',
             }}
         >
             <div
                 style={{
                     width: props.scale * 354,
-                    height: props.scale * 28,
-                }}
-            >
-
-            </div>
-            <div
-                style={{
-                    width: props.scale * 354,
-                    height: props.scale * 616,
-                    boxSizing: 'border-box',
-                    gap: props.scale * 18,
-                    overflow: 'scroll',
-                }}
-            >
-                {genSections()}
-            </div>
-            <div
-                style={{
-                    width: props.scale * 354,
-                    height: props.scale * 56,
-                    background: '#E8FFFB',
-                    boxSizing: 'border-box',
-                }}
-            >
-                <SortBar
-                    scale={props.scale}
-                    modeState={state.modeHis}
-                    switchFunc={switchMode}
-                >
-                </SortBar>
-            </div>
-            <div
-                style={{
-                    width: props.scale * 354,
-                    height: props.scale * 68,
-                    borderTop: '2px solid #B5F4EA',
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    boxSizing: 'border-box',
-                    paddingLeft: props.scale * 8,
-                    paddingRight: props.scale * 8,
-                    paddingTop: props.scale * 16,
-                    paddingBottom: props.scale * 16,
-                }}
-            >
-                <NormalButton
-                    backArrow={true}
-                    activate={false}
-                    disable={true}
-                    back={true}
-                    wordDisplay={true}
-                    expand={true}
-                    word="返回"
-                    scale={props.scale}
-                    image={LabIcon}
-                >
-                </NormalButton>
-                <NormalButton
-                    width={props.scale * 220}
-                    backArrow={true}
-                    activate={false}
-                    disable={true}
-                    back={false}
-                    wordDisplay={true}
-                    expand={true}
-                    word="上传模型"
-                    scale={props.scale}
-                    image={UploadModelIcon}
-                >
-                </NormalButton>
-            </div>
-            <div
-                style={{
-                    position:'absolute',
-                    top:0,
-                    width: props.scale * 354,
                     height: props.scale * 844,
+                    display: 'flex',
+                    position: 'relative',
+                    left:props.scale * 18,
+                    flexDirection: 'column',
+                    gap: props.scale * 18,
                 }}
             >
-                <DisplayTile
-                    scale = {props.scale}
+                <div
+                    style={{
+                        width: props.scale * 354,
+                        height: props.scale * 28,
+                    }}
                 >
-                </DisplayTile>
+
+                </div>
+                <div
+                    style={{
+                        width: props.scale * 354,
+                        height: props.scale * 616,
+                        boxSizing: 'border-box',
+                        gap: props.scale * 18,
+                        overflow: 'scroll',
+                    }}
+                >
+                    {genSections()}
+                </div>
+                <div
+                    style={{
+                        width: props.scale * 354,
+                        height: props.scale * 56,
+                        background: '#E8FFFB',
+                        boxSizing: 'border-box',
+                    }}
+                >
+                    <SortBar
+                        scale={props.scale}
+                        modeState={state.modeHis}
+                        switchFunc={switchMode}
+                    >
+                    </SortBar>
+                </div>
+                <div
+                    style={{
+                        width: props.scale * 354,
+                        height: props.scale * 68,
+                        borderTop: '2px solid #B5F4EA',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        boxSizing: 'border-box',
+                        paddingLeft: props.scale * 8,
+                        paddingRight: props.scale * 8,
+                        paddingTop: props.scale * 16,
+                        paddingBottom: props.scale * 16,
+                    }}
+                >
+                    <NormalButton
+                        backArrow={true}
+                        activate={false}
+                        disable={true}
+                        back={true}
+                        wordDisplay={true}
+                        expand={true}
+                        word="返回"
+                        scale={props.scale}
+                        image={LabIcon}
+                    >
+                    </NormalButton>
+                    <NormalButton
+                        width={props.scale * 220}
+                        backArrow={true}
+                        activate={false}
+                        disable={true}
+                        back={false}
+                        wordDisplay={true}
+                        expand={true}
+                        word="上传模型"
+                        scale={props.scale}
+                        image={UploadModelIcon}
+                    >
+                    </NormalButton>
+                </div>
+            </div>
+            <div
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        width: props.scale * 354,
+                        height: props.scale * 844,
+                    }}
+                >
+                    <DisplayTile
+                        scale={props.scale}
+                    >
+                    </DisplayTile>
             </div>
         </div>
     );

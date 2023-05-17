@@ -62,7 +62,7 @@ function App() {
     <div
       name='frame'
       style={{
-        width: windowSize.scale * 780,
+        width: windowSize.scale * 800,
         height: windowSize.scale * 844,
         background: "rgba(100, 100, 100, 0)",
         boxSizing: 'content-box',

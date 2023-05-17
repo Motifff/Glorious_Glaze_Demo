@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "sectionName": "我的收藏",
+            "type": "like",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "釉彩一号",
+                    "image": "../assets/tile_image/A1B1.png",
+                    "selected": false,
+                    "tileData": [
+                        50,
+                        50,
+                        50,
+                        50
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionName": "配釉材质库",
+            "type": "like",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "釉彩一号",
+                    "image": "../assets/tile_image/A1B1.png",
+                    "selected": false,
+                    "tileData": [
+                        50,
+                        50,
+                        50,
+                        50
+                    ]
+                }
+            ]
+        }
+    ]
+}

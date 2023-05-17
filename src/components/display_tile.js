@@ -5,6 +5,7 @@ import backArrow from '../assets/icon=down.svg'
 import likeIcon from '../assets/icon=like.svg'
 import deleteIcon from '../assets/icon=delete.svg'
 import closeIcon from '../assets/icon=close.svg'
+import A1B1 from '../assets/tile_image/A1B1.png'
 
 
 function DisplayTile(props) {
@@ -12,9 +13,27 @@ function DisplayTile(props) {
         isFold: false
     })
 
+    const loadEffect = useSpring({
+        opacity: 1,
+        from:{
+            opacity :0,
+        }
+    })
+
     const frameStyle = useSpring({
         height: state.isFold ? props.scale * 453 : props.scale * 672
     })
+
+    const foldArrowStyle = useSpring({
+        transform: state.isFold ? 'rotate(0deg)' : 'rotate(180deg)',
+    })
+
+    const handleFold = () => {
+        setState({
+            ...state,
+            isFold: !state.isFold
+        })
+    }
 
     const itemList = () => {
         const items = props.data.tiles.map((tile) =>
@@ -45,16 +64,19 @@ function DisplayTile(props) {
     }
 
     return (
-        <div
+        <animated.div
             style={{
+                ...loadEffect,
                 zIndex: 2,
                 position: 'relative',
                 top: props.scale * 46,
-                width: props.scale * 354,
+                width: props.scale * 390,
                 height: props.scale * 708,
                 display: 'flex',
                 flexDirection: 'column',
-                background: '#FF00FF',
+                paddingLeft: props.scale * 18,
+                backdropFilter: 'blur(5px)',
+                background:'rgba(255,255,255,0.5)',
                 gap: props.scale * 18,
                 boxSizing: 'border-box',
             }}
@@ -63,9 +85,9 @@ function DisplayTile(props) {
                 style={{
                     width: props.scale * 354,
                     height: props.scale * 354,
-                    borderRadius: props.scale * 8,
+                    borderRadius: props.scale * 32,
                     filter: 'drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25))',
-                    backgroundImage: `url(${props.image})`,
+                    backgroundImage: `url(${A1B1})`,
                     backgroundSize: 'cover',
                 }}
             >
@@ -85,10 +107,11 @@ function DisplayTile(props) {
                 }}
             >
                 <animated.div
+                    onClick={handleFold}
                     style={{
+                        ...foldArrowStyle,
                         width: props.scale * 16,
                         height: props.scale * 16,
-                        transform: 'rotate(0deg)',
                         backgroundImage: `url(${backArrow})`,
                     }}
                 >
@@ -111,270 +134,269 @@ function DisplayTile(props) {
                     {"中文测试"}
                 </div>
             </div>
-            <div
-                style={{
-                    width: props.scale * 354,
-                    height: props.scale * 2,
-                    background: '#C9CDD4',
-                    borderRadius: props.scale * 2,
-                }}
-            >
-            </div>
-            <div
-                style={{
-                    position: 'relative',
-                    left: props.scale * 212,
-                    width: props.scale * 142,
-                    height: props.scale * 94,
-                    background: '#00F0F0',
-                    boxSizing: 'border-box',
-                    display: 'flex',
-                    gap: props.scale * 6,
-                    flexDirection: 'column',
-                }}
-            >
-                <div
+            {!state.isFold ?
+                <animated.div
                     style={{
-                        width: props.scale * 142,
-                        height: props.scale * 19,
-                        background: '#000000',
+                        width: props.scale * 354,
                         display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        gap: props.scale * 18,
                         boxSizing: 'border-box',
-                        gap: props.scale * 6,
                     }}
                 >
                     <div
+                        name={'divider'}
                         style={{
-                            width: props.scale * 50,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            textAlign: 'right',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
+                            width: props.scale * 354,
+                            height: props.scale * 2,
+                            background: 'rgba(201, 205, 212, 1)',
+                            borderRadius: props.scale * 2,
                         }}
                     >
-                    黄塘石
                     </div>
                     <div
                         style={{
-                            width: props.scale * 16,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 12,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
+                            position: 'relative',
+                            left: props.scale * 212,
+                            width: props.scale * 142,
+                            height: props.scale * 94,
+                            boxSizing: 'border-box',
+                            display: 'flex',
+                            gap: props.scale * 6,
+                            flexDirection: 'column',
                         }}
                     >
-                    :
+                        <div
+                            style={{
+                                width: props.scale * 142,
+                                height: props.scale * 19,
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                                boxSizing: 'border-box',
+                                gap: props.scale * 6,
+                            }}
+                        >
+                            <div
+                                style={{
+                                    width: props.scale * 50,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    textAlign: 'right',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                黄塘石
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 16,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 12,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                :
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 28,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                91
+                            </div>
+                        </div>
+                        <div
+                            style={{
+                                width: props.scale * 142,
+                                height: props.scale * 19,
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                                boxSizing: 'border-box',
+                                gap: props.scale * 6,
+                            }}
+                        >
+                            <div
+                                style={{
+                                    width: props.scale * 50,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    textAlign: 'right',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                黄塘石
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 16,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 12,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                :
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 28,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                91
+                            </div>
+                        </div>
+                        <div
+                            style={{
+                                width: props.scale * 142,
+                                height: props.scale * 19,
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                                boxSizing: 'border-box',
+                                gap: props.scale * 6,
+                            }}
+                        >
+                            <div
+                                style={{
+                                    width: props.scale * 50,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    textAlign: 'right',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                黄塘石
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 16,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 12,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                :
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 28,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                91
+                            </div>
+                        </div>
+                        <div
+                            style={{
+                                width: props.scale * 142,
+                                height: props.scale * 19,
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                                boxSizing: 'border-box',
+                                gap: props.scale * 6,
+                            }}
+                        >
+                            <div
+                                style={{
+                                    width: props.scale * 50,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    textAlign: 'right',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                黄塘石
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 16,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 12,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                :
+                            </div>
+                            <div
+                                style={{
+                                    width: props.scale * 28,
+                                    height: props.scale * 19,
+                                    fontSize: props.scale * 14,
+                                    alignItems: 'center',
+                                    textAlign: 'center',
+                                    justifyContent: 'center',
+                                    fontFamily: 'Noto Sans SC',
+                                    fontWeight: '600',
+                                }}
+                            >
+                                91
+                            </div>
+                        </div>
                     </div>
                     <div
+                        name={'divider'}
                         style={{
-                            width: props.scale * 28,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
+                            width: props.scale * 354,
+                            height: props.scale * 2,
+                            background: 'rgba(201, 205, 212, 1)',
+                            borderRadius: props.scale * 2,
                         }}
                     >
-                    91
                     </div>
-                </div>
-                <div
-                    style={{
-                        width: props.scale * 142,
-                        height: props.scale * 19,
-                        background: '#000000',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                        boxSizing: 'border-box',
-                        gap: props.scale * 6,
-                    }}
-                >
-                    <div
-                        style={{
-                            width: props.scale * 50,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            textAlign: 'right',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    黄塘石
-                    </div>
-                    <div
-                        style={{
-                            width: props.scale * 16,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 12,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    :
-                    </div>
-                    <div
-                        style={{
-                            width: props.scale * 28,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    91
-                    </div>
-                </div>
-                <div
-                    style={{
-                        width: props.scale * 142,
-                        height: props.scale * 19,
-                        background: '#000000',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                        boxSizing: 'border-box',
-                        gap: props.scale * 6,
-                    }}
-                >
-                    <div
-                        style={{
-                            width: props.scale * 50,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            textAlign: 'right',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    黄塘石
-                    </div>
-                    <div
-                        style={{
-                            width: props.scale * 16,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 12,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    :
-                    </div>
-                    <div
-                        style={{
-                            width: props.scale * 28,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    91
-                    </div>
-                </div>
-                <div
-                    style={{
-                        width: props.scale * 142,
-                        height: props.scale * 19,
-                        background: '#000000',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                        boxSizing: 'border-box',
-                        gap: props.scale * 6,
-                    }}
-                >
-                    <div
-                        style={{
-                            width: props.scale * 50,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            textAlign: 'right',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    黄塘石
-                    </div>
-                    <div
-                        style={{
-                            width: props.scale * 16,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 12,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    :
-                    </div>
-                    <div
-                        style={{
-                            width: props.scale * 28,
-                            height: props.scale * 19,
-                            fontSize: props.scale * 14,
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            justifyContent: 'center',
-                            fontFamily: 'Noto Sans SC',
-                            fontWeight: '600',
-                            background: '#FFFFFF'
-                        }}
-                    >
-                    91
-                    </div>
-                </div>
-            </div>
-            <div
-                style={{
-                    width: props.scale * 354,
-                    height: props.scale * 2,
-                    background: '#C9CDD4',
-                    borderRadius: props.scale * 2,
-                }}
-            >
-            </div>
+                </animated.div>
+                :
+                null
+            }
             <div
                 name={'用户图标'}
                 style={{
@@ -461,7 +483,7 @@ function DisplayTile(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </animated.div>
     )
 }
 export default DisplayTile;
