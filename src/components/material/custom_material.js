@@ -14,7 +14,6 @@ const CustomMaterial = shaderMaterial(
   }  
       `,
   glsl`
-  
   #pragma glslify: cnoise3 = require(glsl-noise/classic/3d.glsl)
   uniform float time;
   varying vec2 vUv;
@@ -48,8 +47,8 @@ const CustomMaterial = shaderMaterial(
     for( int i=-1; i<=1; i++ )
     {
         vec2 g = vec2(float(i),float(j));
-		vec2 o = hash2( n + g );
-		#ifdef ANIMATE
+		    vec2 o = hash2( n + g );
+		    #ifdef ANIMATE
         o = 0.5 + 0.5*sin( iTime + 6.2831*o );
         #endif	
         vec2 r = g + o - f;
@@ -71,8 +70,8 @@ const CustomMaterial = shaderMaterial(
     for( int i=-2; i<=2; i++ )
     {
         vec2 g = mg + vec2(float(i),float(j));
-		vec2 o = hash2( n + g );
-		#ifdef ANIMATE
+		    vec2 o = hash2( n + g );
+		    #ifdef ANIMATE
         o = 0.5 + 0.5*sin( iTime + 6.2831*o );
         #endif	
         vec2 r = g + o - f;
@@ -83,17 +82,21 @@ const CustomMaterial = shaderMaterial(
 
     return vec3( md, mr );
   }
-
+  
   void main(){
     float noise = cnoise3(vec3(vUv * 50.0, time * 0.2));
     
-    vec3 c = voronoi( 9.0* vUv );
+    //dis -> generate distance
+    float dis = 9.0;
+    vec3 c = voronoi( dis * vUv );
 
     vec3 col = c.x*vec3(1.0);
 
+    //smooth step controls the width of wire
     col = mix(vec3(1.0,1.0,1.0), vec3(0.0), smoothstep( 0.01, 0.02, c.x ));
 
-    gl_FragColor = vec4(col, 1.0);
+    // 最终颜色输出
+    gl_FragColor = vec4(col.rgb, 1.0);
   }
   `
 )
