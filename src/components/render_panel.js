@@ -74,6 +74,7 @@ function RenderPanel(props) {
             </div>
             <div
                 style={{
+                    width: props.scale *318,
                     height: props.scale * 246
                 }}
             >

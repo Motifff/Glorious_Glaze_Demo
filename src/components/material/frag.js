@@ -46,6 +46,15 @@ const fragmentShader = /*glsl*/`
         return bool(step(t,0.0));
     }
 
+    bool intersectionTargetPlane(vec3 o, vec3 d, vec3 n, out vec3 p) 
+    { 
+        float cosTheta = dot(d, n); 
+        if (cosTheta == 0.0) return false; 
+        float t = -dot(o, n) / cosTheta; 
+        p = o + d * t; 
+        return bool(step(t, 0.0)); 
+    }
+
     vec2 hash2( vec2 p )
     {
         //white noise
@@ -383,10 +392,10 @@ const fragmentShader = /*glsl*/`
         return f;
     }
 
-    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 e) {
+    vec3 getObjectColor(in vec3 p, in vec3 cam, in vec3 e, in vec3 normal) {
         vec3 op = p;
         vec3 dir = e;
-        const vec3 n = vec3(0.0,1.0,0.0);
+        vec3 n = normal;
         //the depth should be defined by myself
         float depth = length(p - cam);
         float depth_f = max(depth*0.8, 1.0);
@@ -475,40 +484,35 @@ const fragmentShader = /*glsl*/`
     }
 
     void main(){
-        vec2 iuv = vUv * 2.0 - 1.0;
+        vec2 iuv = vUv - 0.5;
         vec2 uv = iuv;    
 
-        float cameraDistance = 20.0;
-        float polarAngle = viewAngle.y;
-        float azimuthalAngle = viewAngle.z;
+        float disCam = 10.0;
 
-        //Ray Trace
-        vec3 ori = vec3( 0.0, 10.0 , 0.0);
+        vec3 cam = vec3(0.0, 0.0, disCam); 
 
-        vec3 ang = vec3( 0.25 * PI, 0.0 * PI , 0.0 * PI);
-        
-        vec3 pixDir = vec3(vUv,-1);
+        vec3 dir = normalize(vec3(uv.xy, -0.9));
 
-        mat3 rot = fromEuler(ang);
+        vec3 ang = vec3(0.0, 0.0, 0.0);
+	    mat3 rot = fromEuler(ang);
 
-        vec3 dir = normalize(pixDir - ori); 
-
+        //cam = normalize(cam * rot);
         dir = normalize(dir * rot);
-             
+
+        vec3 surfaceNormal = vec3(0.0 , 0.0, 1.0);
+       
         // color
-        vec3 p = vec3(vUv, 1);
+        vec3 p = vec3(uv.xy,gl_FragCoord.z);
         vec3 color = vec3(0,0,0);
-        //if(intersectionPlane(ori,dir,p))
-        color = getObjectColor(p,ori,dir);
-    
+        color = getObjectColor(p,cam,dir,surfaceNormal);
+        
         // post
         //color *= 1.3;
         color = pow(color,vec3(0.4545));
-    
+        
         // vignette
         float vgn = smoothstep(1.2,0.5,abs(iuv.y)) * smoothstep(1.2,0.5,abs(iuv.x));
         color *= vgn * 0.3 + 0.7;
-
         // 最终颜色输出
         gl_FragColor = vec4(color, 1.0);
     }

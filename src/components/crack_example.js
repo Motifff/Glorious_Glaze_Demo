@@ -14,11 +14,11 @@ function ShaderBox() {
     // Get the polar and azimuthal angles of the camera
     const polarAngle = controlsRef.current.getPolarAngle()
     const azimuthalAngle = controlsRef.current.getAzimuthalAngle()
-    const angleData = new THREE.Vector3(0,polarAngle,azimuthalAngle)
-    console.log(angleData)
+    const viewAngle = new THREE.Vector3(0,polarAngle,azimuthalAngle)
+    console.log(viewAngle)
     // Update the time uniform in the material
     ref.current.material.uniforms.time.value += delta
-    ref.current.material.uniforms.viewAngle.value = angleData
+    ref.current.material.uniforms.viewAngle.value = viewAngle
     ref.current.material.uniformsNeedUpdate = true
   })
 
@@ -38,7 +38,7 @@ function ShaderBox() {
         far={4} 
       >
       </ContactShadows>
-      <OrbitControls enableZoom={false} enablePan={false} ref={controlsRef} maxPolarAngle={Math.PI / 12 * 4}/>
+      <OrbitControls enableZoom={true} enablePan={false} ref={controlsRef} maxPolarAngle={Math.PI / 12 * 4}/>
     </>
   )
 }
