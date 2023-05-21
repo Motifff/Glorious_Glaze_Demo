@@ -46,6 +46,12 @@ const fragmentShader = /*glsl*/`
         return bool(step(t,0.0));
     }
 
+    bool intersectionZPlane(vec3 o, vec3 d, out vec3 p){
+        float t = o.z / d.z;
+        p = o - d * t;
+        return bool(step(t,0.0));
+    }
+
     bool intersectionTargetPlane(vec3 o, vec3 d, vec3 n, out vec3 p) 
     { 
         float cosTheta = dot(d, n); 
@@ -392,11 +398,10 @@ const fragmentShader = /*glsl*/`
         return f;
     }
 
-    vec3 getObjectColor(in vec3 p, in vec3 cam, in vec3 e, in vec3 normal) {
+    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 e) {
         vec3 op = p;
         vec3 dir = e;
-        vec3 n = normal;
-        //the depth should be defined by myself
+        const vec3 n = vec3(0.0,1.0,0.0);
         float depth = length(p - cam);
         float depth_f = max(depth*0.8, 1.0);
         p *= CRACKS_SCALE;
@@ -439,6 +444,8 @@ const fragmentShader = /*glsl*/`
         float crack_depth_4 = abs(cp.y - p.y + 2.0);
         crack_depth_4 = pow(max(1.0-crack_depth_4*0.2/gth, 0.0),3.0) * 0.15;
         crack_depth_4 *= 0.5 + 0.5 * noise13(cp*vec3(0.7,10.0,0.7));
+        
+        
         
         // base color
         vec3 col = toLinear(DEEP_COLOR);
@@ -488,23 +495,29 @@ const fragmentShader = /*glsl*/`
         vec2 uv = iuv;    
 
         float disCam = 10.0;
+ 
+        //this area is defining a camera capture model
+        vec3 vcamP = vec3(0.0,1.0,0.0);
+        vec3 vcamR = vec3(0.0,viewAngle.y,viewAngle.z);
+        mat3 vcamRM = fromEuler(vcamR);
+        vcamP = normalize(vcamP * vcamRM);
 
-        vec3 cam = vec3(0.0, 0.0, disCam); 
+        vec3 cam = vec3(0.0,disCam,0.0);
 
-        vec3 dir = normalize(vec3(uv.xy, -0.9));
+        vec3 dir = normalize(vec3(uv.xy, -1.0));
 
-        vec3 ang = vec3(0.0, 0.0, 0.0);
+        vec3 ang = vec3(0.0, PI * 0.5, 0.0);
 	    mat3 rot = fromEuler(ang);
 
-        //cam = normalize(cam * rot);
         dir = normalize(dir * rot);
 
         vec3 surfaceNormal = vec3(0.0 , 0.0, 1.0);
        
         // color
-        vec3 p = vec3(uv.xy,gl_FragCoord.z);
+        vec3 p;
         vec3 color = vec3(0,0,0);
-        color = getObjectColor(p,cam,dir,surfaceNormal);
+        if(intersectionPlane(cam,dir,p))
+            color = getObjectColor(p,cam,dir);
         
         // post
         //color *= 1.3;
