@@ -398,10 +398,10 @@ const fragmentShader = /*glsl*/`
         return f;
     }
 
-    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 e) {
+    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 normal,in vec3 e) {
         vec3 op = p;
         vec3 dir = e;
-        const vec3 n = vec3(0.0,1.0,0.0);
+        vec3 n = normal;
         float depth = length(p - cam);
         float depth_f = max(depth*0.8, 1.0);
         p *= CRACKS_SCALE;
@@ -497,27 +497,24 @@ const fragmentShader = /*glsl*/`
         float disCam = 10.0;
  
         //this area is defining a camera capture model
-        vec3 vcamP = vec3(0.0,1.0,0.0);
-        vec3 vcamR = vec3(0.0,viewAngle.y,viewAngle.z);
-        mat3 vcamRM = fromEuler(vcamR);
-        vcamP = normalize(vcamP * vcamRM);
+        vec3 vcamP = vec3(0.0,0.0,1.0);
 
         vec3 cam = vec3(0.0,disCam,0.0);
 
-        vec3 dir = normalize(vec3(uv.xy, -1.0));
+        vec3 dir = normalize(vec3(uv.xy, 0.0) - vcamP);
 
         vec3 ang = vec3(0.0, PI * 0.5, 0.0);
 	    mat3 rot = fromEuler(ang);
 
         dir = normalize(dir * rot);
 
-        vec3 surfaceNormal = vec3(0.0 , 0.0, 1.0);
+        vec3 surfaceNormal = vec3(0.0 , 1.0, 0.0);
        
         // color
         vec3 p;
         vec3 color = vec3(0,0,0);
         if(intersectionPlane(cam,dir,p))
-            color = getObjectColor(p,cam,dir);
+            color = getObjectColor(p,cam,surfaceNormal,dir);
         
         // post
         //color *= 1.3;
