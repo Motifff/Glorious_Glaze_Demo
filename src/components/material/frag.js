@@ -3,6 +3,7 @@ const fragmentShader = /*glsl*/`
 
     uniform float time;
     uniform vec3 viewAngle;
+    uniform float fogRange;
     varying vec2 vUv;
     
     #pragma glslify: cnoise3 = require(glsl-noise/classic/3d.glsl)
@@ -380,9 +381,16 @@ const fragmentShader = /*glsl*/`
         return wind * wind;
     }
 
+    //如果你想改变雪的密度，有几个地方可以调整：
+
+    //你可以改变循环的次数i，越多次循环表示越多层噪声叠加，雪的细节越丰富，但也越耗费性能。
+    //你可以改变系数a的初始值和递减率，它们决定了不同尺度上噪声的权重，越大的a表示越高的密度。
+    //你可以改变smoothstep函数的参数0.55和0.65，它们决定了雪覆盖度的阈值，越小的0.55表示越低的覆盖度，越大的0.65表示越高的覆盖度。
+    //你可以改变pow函数的参数0.25，它决定了雪覆盖度的对比度，越小的参数表示越高的对比度。
+    //你可以改变最后乘以的系数0.9，它决定了雪覆盖度的最大值，越大的系数表示越高的最大值。
     float getSnowMask(in vec2 p) {
         mat2 m = mat2( 1.6,  1.2, -1.2,  1.6 );
-        float a = 1.0;
+        float a = 8.0;
         float w = 1.0;
         float f = noise12( p );
         for(int i = 0; i < 6; i++) {
@@ -391,14 +399,14 @@ const fragmentShader = /*glsl*/`
             w += a;
         }
         f /= w;
-        f = smoothstep(0.55,0.65,f);
+        f = smoothstep(fogRange,0.65,f);
         f = pow(f,0.25);
         f = f * 0.9;
         
         return f;
     }
 
-    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 normal,in vec3 e) {
+    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 e, in vec3 normal) {
         vec3 op = p;
         vec3 dir = e;
         vec3 n = normal;
@@ -445,8 +453,6 @@ const fragmentShader = /*glsl*/`
         crack_depth_4 = pow(max(1.0-crack_depth_4*0.2/gth, 0.0),3.0) * 0.15;
         crack_depth_4 *= 0.5 + 0.5 * noise13(cp*vec3(0.7,10.0,0.7));
         
-        
-        
         // base color
         vec3 col = toLinear(DEEP_COLOR);
         
@@ -454,11 +460,11 @@ const fragmentShader = /*glsl*/`
         dir.xz += norm.xz * REFRACTION * 0.3;
         vec3 bp;
         intersectionPlane(cam+vec3(0.,0.5,0.),dir,bp);        
-        col += pow(noise13(bp * 14.0),20.0) * BUBBLES_BRIGHTNESS * gth;
+        //col += pow(noise13(bp * 14.0),20.0) * BUBBLES_BRIGHTNESS * gth;
         intersectionPlane(cam+vec3(0.,1.,0.),dir,bp);        
-        col += pow(noise13(bp * 15.0),20.0) * BUBBLES_BRIGHTNESS * gth;
+        //col += pow(noise13(bp * 15.0),20.0) * BUBBLES_BRIGHTNESS * gth;
         intersectionPlane(cam+vec3(0.,2.,0.),dir,bp);        
-        col += pow(noise13(bp * 16.0),20.0) * BUBBLES_BRIGHTNESS * gth;
+        //col += pow(noise13(bp * 16.0),20.0) * BUBBLES_BRIGHTNESS * gth;
         
         // cracks color
         vec3 crc = toLinear(CRACKS_COLOR);
@@ -491,30 +497,37 @@ const fragmentShader = /*glsl*/`
     }
 
     void main(){
-        vec2 iuv = vUv - 0.5;
+        vec2 iuv = 2.0 * vUv - 1.0;
         vec2 uv = iuv;    
 
-        float disCam = 10.0;
+        float disCam = 30.0;
  
         //this area is defining a camera capture model
-        vec3 vcamP = vec3(0.0,0.0,1.0);
+        float vx = sin(viewAngle.y)*sin(viewAngle.z);
+        float vy = -sin(viewAngle.y)*cos(viewAngle.z);
+        float vz = cos(viewAngle.y);
 
-        vec3 cam = vec3(0.0,disCam,0.0);
+        vec3 vcamP = vec3(vx,vy,vz);
+        //vec3 vcamP = vec3(0.0,0.0,1.0);
 
         vec3 dir = normalize(vec3(uv.xy, 0.0) - vcamP);
 
+        //rotate to calculate from xz plane
         vec3 ang = vec3(0.0, PI * 0.5, 0.0);
 	    mat3 rot = fromEuler(ang);
 
-        dir = normalize(dir * rot);
+        //rotate to fit rotation
 
-        vec3 surfaceNormal = vec3(0.0 , 1.0, 0.0);
+        dir = normalize(dir * rot);
+        vec3 ori = dir *rot* disCam;
+
+        vec3 surfaceNormal = vec3(0.0,1.0,0.0);
        
         // color
-        vec3 p;
+        vec3 p = disCam * (vec3(uv.xy,0));
+        p = p*rot;
         vec3 color = vec3(0,0,0);
-        if(intersectionPlane(cam,dir,p))
-            color = getObjectColor(p,cam,surfaceNormal,dir);
+        color = getObjectColor(p,ori,dir,surfaceNormal);
         
         // post
         //color *= 1.3;

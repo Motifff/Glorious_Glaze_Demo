@@ -1,21 +1,21 @@
 import { useRef, useState } from 'react'
 import * as THREE from 'three'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { PresentationControls,OrbitControls, ContactShadows } from '@react-three/drei'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
+import { PresentationControls,OrbitControls, ContactShadows, RoundedBox } from '@react-three/drei'
 import { CustomMaterial } from './material/custom_material'
 
 function ShaderBox() {
   const ref = useRef()
   const controlsRef = useRef()
 
-  const [rotateState, setRotateState] = useState(0,0,0)
+  const obj = useLoader(OBJLoader, process.env.PUBLIC_URL+'/surface.obj')
 
   useFrame((state, delta) => {
     // Get the polar and azimuthal angles of the camera
     const polarAngle = controlsRef.current.getPolarAngle()
     const azimuthalAngle = controlsRef.current.getAzimuthalAngle()
     const viewAngle = new THREE.Vector3(0,polarAngle,azimuthalAngle)
-    console.log(viewAngle)
     // Update the time uniform in the material
     ref.current.material.uniforms.time.value += delta
     ref.current.material.uniforms.viewAngle.value = viewAngle
@@ -24,11 +24,10 @@ function ShaderBox() {
 
   return (
     <>
-      <mesh scale={[3.5, 0.1, 3.5]} ref={ref}>
-        <boxGeometry />
-        <customMaterial
-          key={CustomMaterial.key} 
-        />
+      <mesh scale={[3.0, 0.1, 3.0]}>
+        <RoundedBox ref={ref}>
+          <customMaterial key={CustomMaterial.key}/>
+        </RoundedBox>
       </mesh>
       <ContactShadows 
         position={[0, -1, 0]} 
@@ -38,7 +37,7 @@ function ShaderBox() {
         far={4} 
       >
       </ContactShadows>
-      <OrbitControls enableZoom={true} enablePan={false} ref={controlsRef} maxPolarAngle={Math.PI / 12 * 4}/>
+      <OrbitControls enableZoom={true} enablePan={false} ref={controlsRef}/>
     </>
   )
 }
