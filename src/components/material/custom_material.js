@@ -8,7 +8,7 @@ const CustomMaterial = shaderMaterial(
   {
     time: 0,
     viewAngle: null,
-    fogRange: 0.65,
+    fogRange: null,
   },
   glsl`
   ${vert}

@@ -34,6 +34,7 @@ function MainPage(props) {
           isTexture={props.state.isTexture}
           isLight={props.state.isLight}
           clickFunc={props.panelClick}
+          materialData={props.materialData}
         ></RenderPanel>
         <div
           style={{

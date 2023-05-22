@@ -5,7 +5,7 @@ import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
 import { PresentationControls,OrbitControls, ContactShadows, RoundedBox } from '@react-three/drei'
 import { CustomMaterial } from './material/custom_material'
 
-function ShaderBox() {
+function ShaderBox(props) {
   const ref = useRef()
   const controlsRef = useRef()
 
@@ -19,12 +19,13 @@ function ShaderBox() {
     // Update the time uniform in the material
     ref.current.material.uniforms.time.value += delta
     ref.current.material.uniforms.viewAngle.value = viewAngle
+    ref.current.material.uniforms.fogRange.value = new THREE.Vector2(props.materialData.fog[0],props.materialData.fog[0]);
     ref.current.material.uniformsNeedUpdate = true
   })
 
   return (
     <>
-      <mesh scale={[3.0, 0.1, 3.0]}>
+      <mesh scale={[3.0, 0.1, 3.0]} >
         <RoundedBox ref={ref}>
           <customMaterial key={CustomMaterial.key}/>
         </RoundedBox>
@@ -37,15 +38,18 @@ function ShaderBox() {
         far={4} 
       >
       </ContactShadows>
-      <OrbitControls enableZoom={true} enablePan={false} ref={controlsRef}/>
+      <OrbitControls enableZoom={true} enablePan={false} maxPolarAngle={Math.PI / 12 * 4} ref={controlsRef}/>
     </>
   )
 }
 
-const CrackExample = (props) => {
+function CrackExample(props){
   return (
     <Canvas shadows>
-      <ShaderBox></ShaderBox>
+      <ShaderBox
+        materialData={props.materialData}
+      >
+      </ShaderBox>
     </Canvas>
   );
 };

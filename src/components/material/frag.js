@@ -3,14 +3,17 @@ const fragmentShader = /*glsl*/`
 
     uniform float time;
     uniform vec3 viewAngle;
-    uniform float fogRange;
+    uniform vec2 fogRange;
+    uniform vec2 crackScale;
+    uniform vec2 crackThickness;
+    
     varying vec2 vUv;
     
     #pragma glslify: cnoise3 = require(glsl-noise/classic/3d.glsl)
     #define HASHSCALE3 vec3(.1031, .1030, .0973)
     #define PI 3.1415926535897932384626433832795
 
-    //Define consts
+    //Define consts from external
     const float THRESHOLD 	= 0.001;
     const float EPSILON 	= 5e-3;
 
@@ -25,6 +28,7 @@ const fragmentShader = /*glsl*/`
     const vec3 DEEP_COLOR = vec3(0.0,0.12,0.2);
     const vec3 CRACKS_COLOR = vec3(0.3,0.95,1.0) * 1.2;
     const vec3 CRACKS_COLOR_TOP = vec3(1.6);
+    //Currently no use at all
     const vec3 MOUNTAINS_COLOR = vec3(0.04,0.02,0.0);
 
     //float saturate(float x) { return min(max(x, 0.0), 1.0); }
@@ -390,7 +394,7 @@ const fragmentShader = /*glsl*/`
     //你可以改变最后乘以的系数0.9，它决定了雪覆盖度的最大值，越大的系数表示越高的最大值。
     float getSnowMask(in vec2 p) {
         mat2 m = mat2( 1.6,  1.2, -1.2,  1.6 );
-        float a = 8.0;
+        float a = 6.0;
         float w = 1.0;
         float f = noise12( p );
         for(int i = 0; i < 6; i++) {
@@ -399,7 +403,7 @@ const fragmentShader = /*glsl*/`
             w += a;
         }
         f /= w;
-        f = smoothstep(fogRange,0.65,f);
+        f = smoothstep(fogRange.x,fogRange.y,f);
         f = pow(f,0.25);
         f = f * 0.9;
         

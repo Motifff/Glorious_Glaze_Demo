@@ -78,7 +78,7 @@ function RenderPanel(props) {
                     height: props.scale * 246
                 }}
             >
-                <CrackExample>  
+                <CrackExample materialData={props.materialData}>  
                 </CrackExample>
             </div>
             <div

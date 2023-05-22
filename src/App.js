@@ -15,6 +15,9 @@ function App() {
   const [state, setState] = useState({
     ing: [50, 50, 50, 50],
     isTexture: false,
+    materialData:{
+      fog:[0.55,0.65],
+    },
     isLight: false,
   })
 
@@ -78,6 +81,7 @@ function App() {
         state={state}
         handleIngClick={handleIngClick}
         panelClick={panelClick}
+        materialData={state.materialData}
       ></MainPage>
       <ContentPage
         scale={windowSize.scale}
