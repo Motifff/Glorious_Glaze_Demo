@@ -4,13 +4,15 @@ const fragmentShader = /*glsl*/`
     // variable comes from external
     uniform float time;
     uniform vec3 viewAngle;
-    uniform vec2 fogRange;
+    uniform vec2 snowRange;
     uniform float transparency;
     uniform float CRACKS_SCALE;
     uniform float CRACKS_THICKNESS;
     uniform vec3 SNOW_COLOR;
     uniform vec3 FOG_COLOR;
-    uniform vec3 DEEP_COLOR;
+    uniform float noiseScale;
+    uniform vec3 baseColorL;
+    uniform vec3 baseColorH;
     uniform vec3 CRACKS_COLOR;
     uniform bool enableSnow;
     
@@ -405,21 +407,21 @@ const fragmentShader = /*glsl*/`
             w += a;
         }
         f /= w;
-        f = smoothstep(fogRange.x,fogRange.y,f);
+        f = smoothstep(snowRange.x,snowRange.y,f);
         f = pow(f,0.25);
         f = f * 0.9;
         
         return f;
     }
 
-    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 e, in vec3 normal) {
+    vec3 getObjectColor(in vec3 p, const in vec3 cam, in vec3 e, in vec3 normal, in vec2 uvPosition) {
         vec3 op = p;
         vec3 dir = e;
         vec3 n = normal;
         float depth = length(p - cam);
         float depth_f = max(depth*0.8, 1.0);
         p *= CRACKS_SCALE;
-        
+        vec3 col;
         
         // global thickness modulation
         float gth = 0.6 + 0.8 * smoothstep(0.2,0.8, noise13(p*0.05));    
@@ -459,17 +461,14 @@ const fragmentShader = /*glsl*/`
         crack_depth_4 = pow(max(1.0-crack_depth_4*0.2/gth, 0.0),3.0) * 0.15;
         crack_depth_4 *= 0.5 + 0.5 * noise13(cp*vec3(0.7,10.0,0.7));
         
-        // base color
-        vec3 col = toLinear(DEEP_COLOR);
-        
         // bubbles    
         dir.xz += norm.xz * REFRACTION * 0.3;
         vec3 bp;
         intersectionPlane(cam+vec3(0.,0.5,0.),dir,bp);        
         //col += pow(noise13(bp * 14.0),20.0) * BUBBLES_BRIGHTNESS * gth;
-        intersectionPlane(cam+vec3(0.,1.,0.),dir,bp);        
+        //intersectionPlane(cam+vec3(0.,1.,0.),dir,bp);        
         //col += pow(noise13(bp * 15.0),20.0) * BUBBLES_BRIGHTNESS * gth;
-        intersectionPlane(cam+vec3(0.,2.,0.),dir,bp);        
+        //intersectionPlane(cam+vec3(0.,2.,0.),dir,bp);        
         //col += pow(noise13(bp * 16.0),20.0) * BUBBLES_BRIGHTNESS * gth;
         
         // cracks color
@@ -503,6 +502,17 @@ const fragmentShader = /*glsl*/`
             float snow = getSnowMask(p.xz*0.1) / depth_f;
             col = mix(col,SNOW_COLOR,snow);
         }
+
+        //merge everything
+        // base color
+        float dis2P = 100.0;
+        vec3 virtualP = vec3(p.x+e.x*dis2P,p.y+e.y*dis2P,0);
+        float noiseFactor = cnoise3(p*noiseScale);
+        vec3 base_col = mix(baseColorL, baseColorH, noiseFactor);
+        col = col + base_col;
+
+        // second layer
+
         return col;
     }
 
@@ -537,7 +547,7 @@ const fragmentShader = /*glsl*/`
         vec3 p = disCam * (vec3(uv.xy,0));
         p = p*rot;
         vec3 color = vec3(0,0,0);
-        color = getObjectColor(p,ori,dir,surfaceNormal);
+        color = getObjectColor(p,ori,dir,surfaceNormal,uv);
         
         // post
         //color *= 1.3;

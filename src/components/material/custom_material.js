@@ -8,22 +8,24 @@ const CustomMaterial = shaderMaterial(
   {
     time: 0,
     viewAngle: null,
-    fogRange: null,
+    snowRange: null,
     FOG_COLOR:null,
     SNOW_COLOR:null,
-    DEEP_COLOR:null,
+    baseColorL:null,
+    baseColorH:null,
     CRACKS_SCALE:null,
     CRACKS_THICKNESS:null,
     CRACKS_COLOR:null,
     transparency:null,
     enableSnow:null,
+    noiseScale:null,
   },
   glsl`
   ${vert}
       `,
   glsl`
   ${frag}
-  `
+  `,
 )
 
 extend({ CustomMaterial })

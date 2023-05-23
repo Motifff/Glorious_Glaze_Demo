@@ -18,13 +18,18 @@ function App() {
     ing: [50, 50, 50, 50],
     isTexture: false,
     materialData:{
-      crackScale:0.6,
+      //crack color
+      crackScale:1.0,
       crackThickness:0.9,
       crackColor:new THREE.Vector3(0.792,0.792,0.753),
+      //dot color
       enableSnow:false,
-      snowColor:new THREE.Vector3(0.85,0.98,1.0),
-      deepColor:new THREE.Vector3(0.722,0.722,0.682),
-      fogRange:new THREE.Vector2(0.65,0.65),
+      snowRange:new THREE.Vector2(0.15,0.65),
+      snowColor:new THREE.Vector3(0.749,0.749,0.718),
+      //basic color
+      baseColorL:new THREE.Vector3(0.431,0.353,0.259),
+      baseColorH:new THREE.Vector3(0.722,0.722,0.682),
+      noiseScale: 0.05,
       fogColor:new THREE.Vector3(0.0,0.04,0.05),
       transparency:1.0,
     },
