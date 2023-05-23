@@ -1,33 +1,35 @@
 const fragmentShader = /*glsl*/`
     precision highp float;
 
+    // variable comes from external
     uniform float time;
     uniform vec3 viewAngle;
     uniform vec2 fogRange;
-    uniform vec2 crackScale;
-    uniform vec2 crackThickness;
+    uniform float transparency;
+    uniform float CRACKS_SCALE;
+    uniform float CRACKS_THICKNESS;
+    uniform vec3 SNOW_COLOR;
+    uniform vec3 FOG_COLOR;
+    uniform vec3 DEEP_COLOR;
+    uniform vec3 CRACKS_COLOR;
+    uniform bool enableSnow;
     
+    // variable comes from vertex shader
     varying vec2 vUv;
     
     #pragma glslify: cnoise3 = require(glsl-noise/classic/3d.glsl)
     #define HASHSCALE3 vec3(.1031, .1030, .0973)
     #define PI 3.1415926535897932384626433832795
 
-    //Define consts from external
+    //Define internal variable and constants
     const float THRESHOLD 	= 0.001;
     const float EPSILON 	= 5e-3;
-
     const float HEIGHT_POWER = 5.0;
-    const float CRACKS_SCALE = 0.6;
-    const float CRACKS_THICKNESS = 0.9;
     const float CRACKS_ALPHA = 0.8;
-    const float REFRACTION = 0.8;
-    const float BUBBLES_BRIGHTNESS = 0.4;
-    const vec3 SNOW_COLOR = vec3(0.85,0.98,1.0);
-    const vec3 FOG_COLOR = vec3(0.0,0.04,0.05);
-    const vec3 DEEP_COLOR = vec3(0.0,0.12,0.2);
-    const vec3 CRACKS_COLOR = vec3(0.3,0.95,1.0) * 1.2;
+    const float REFRACTION = 0.0;
+    const float BUBBLES_BRIGHTNESS = 0.8;
     const vec3 CRACKS_COLOR_TOP = vec3(1.6);
+
     //Currently no use at all
     const vec3 MOUNTAINS_COLOR = vec3(0.04,0.02,0.0);
 
@@ -487,16 +489,20 @@ const fragmentShader = /*glsl*/`
                 crack_depth * a);
             
         // reflection
-        float fresnel = pow(max(1.0 - dot(-e,n),0.0),5.0) * 0.9 + 0.1;
-        vec3 rdir = reflect(e,norm);
-        vec3 reflection = getSkyColor(rdir,true);
-    
-        col = mix(col,reflection,fresnel);
+        bool refEnable = false;
+        if(refEnable){
+            float fresnel = pow(max(1.0 - dot(-e,n),0.0),5.0) * 0.9 + 0.1;
+            vec3 rdir = reflect(e,norm);
+            vec3 reflection = getSkyColor(rdir,true);
+            col = mix(col,reflection,fresnel);
+        }
         
         // snow surface
-        depth_f = max(depth*0.01, 1.0);
-        float snow = getSnowMask(p.xz*0.1) / depth_f;
-        col = mix(col,SNOW_COLOR,snow);
+        if(enableSnow){
+            depth_f = max(depth*0.01, 1.0);
+            float snow = getSnowMask(p.xz*0.1) / depth_f;
+            col = mix(col,SNOW_COLOR,snow);
+        }
         return col;
     }
 
@@ -541,7 +547,7 @@ const fragmentShader = /*glsl*/`
         float vgn = smoothstep(1.2,0.5,abs(iuv.y)) * smoothstep(1.2,0.5,abs(iuv.x));
         color *= vgn * 0.3 + 0.7;
         // 最终颜色输出
-        gl_FragColor = vec4(color, 1.0);
+        gl_FragColor = vec4(color, transparency);
     }
 `;
 export default fragmentShader;

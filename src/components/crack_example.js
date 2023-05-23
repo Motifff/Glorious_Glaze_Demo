@@ -19,15 +19,26 @@ function ShaderBox(props) {
     // Update the time uniform in the material
     ref.current.material.uniforms.time.value += delta
     ref.current.material.uniforms.viewAngle.value = viewAngle
-    ref.current.material.uniforms.fogRange.value = new THREE.Vector2(props.materialData.fog[0],props.materialData.fog[0]);
+    ref.current.material.uniforms.fogRange.value = props.materialData.fogRange;
+    ref.current.material.uniforms.FOG_COLOR.value = props.materialData.fogColor;
+    ref.current.material.uniforms.SNOW_COLOR.value = props.materialData.snowColor;
+    ref.current.material.uniforms.DEEP_COLOR.value = props.materialData.deepColor;
+    ref.current.material.uniforms.CRACKS_SCALE.value = props.materialData.crackScale;
+    ref.current.material.uniforms.CRACKS_THICKNESS.value = props.materialData.crackThickness;
+    ref.current.material.uniforms.CRACKS_COLOR.value = props.materialData.crackColor;
+    ref.current.material.uniforms.transparency.value = props.materialData.transparency;
+    ref.current.material.uniforms.enableSnow.value = props.materialData.enableSnow;
+
     ref.current.material.uniformsNeedUpdate = true
   })
 
   return (
     <>
-      <mesh scale={[3.0, 0.1, 3.0]} >
-        <RoundedBox ref={ref}>
+      <mesh scale={[3.0,0.2,3.0]} >
+        <RoundedBox args={[1.0,1.0,1.0]} radius={0.05} ref={ref}>
           <customMaterial key={CustomMaterial.key}/>
+        </RoundedBox>
+        <RoundedBox args={[1.04,0.4,1.04]}>
         </RoundedBox>
       </mesh>
       <ContactShadows 

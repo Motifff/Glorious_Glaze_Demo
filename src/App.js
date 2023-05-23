@@ -3,6 +3,8 @@ import { useSpring, animated } from '@react-spring/web'
 import './App.css';
 import ContentPage from './pages/content_page';
 import MainPage from './pages/main_page';
+import { Vector3 } from 'three';
+import * as THREE from 'three'
 
 
 function App() {
@@ -16,7 +18,15 @@ function App() {
     ing: [50, 50, 50, 50],
     isTexture: false,
     materialData:{
-      fog:[0.55,0.65],
+      crackScale:0.6,
+      crackThickness:0.9,
+      crackColor:new THREE.Vector3(0.792,0.792,0.753),
+      enableSnow:false,
+      snowColor:new THREE.Vector3(0.85,0.98,1.0),
+      deepColor:new THREE.Vector3(0.722,0.722,0.682),
+      fogRange:new THREE.Vector2(0.65,0.65),
+      fogColor:new THREE.Vector3(0.0,0.04,0.05),
+      transparency:1.0,
     },
     isLight: false,
   })
@@ -54,7 +64,6 @@ function App() {
   const handleIngClick = (target, nowNum) => {
     let setIng = state.ing;
     setIng[target] = nowNum;
-    console.log(target, nowNum)
     setState({
       ...state,
       ing: setIng,
