@@ -19,7 +19,7 @@ function App() {
     isTexture: false,
     materialData:{
       //crack color
-      crackScale:1.0,
+      crackScale:0.5,
       crackThickness:0.9,
       crackColor:new THREE.Vector3(0.792,0.792,0.753),
       //dot color

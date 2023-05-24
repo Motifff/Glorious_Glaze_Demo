@@ -505,11 +505,15 @@ const fragmentShader = /*glsl*/`
 
         //merge everything
         // base color
-        float dis2P = 100.0;
+        float dis2P = 10.0;
         vec3 virtualP = vec3(p.x+e.x*dis2P,p.y+e.y*dis2P,0);
-        float noiseFactor = cnoise3(p*noiseScale);
+
+        float noiseFactor1 = cnoise3(virtualP*noiseScale);
+        float noiseFactor2 = hash3(virtualP.xy*noiseScale);
+
+        float noiseFactor = mix(noiseFactor1,noiseFactor2,0.5);
         vec3 base_col = mix(baseColorL, baseColorH, noiseFactor);
-        col = col + base_col;
+        col = col*0.4 + base_col;
 
         // second layer
 
