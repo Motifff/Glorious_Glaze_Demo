@@ -28,7 +28,7 @@ const fragmentShader = /*glsl*/`
     const float EPSILON 	= 5e-3;
     const float HEIGHT_POWER = 5.0;
     const float CRACKS_ALPHA = 0.8;
-    const float REFRACTION = 0.0;
+    const float REFRACTION = 0.5;
     const float BUBBLES_BRIGHTNESS = 0.8;
     const vec3 CRACKS_COLOR_TOP = vec3(1.6);
 
@@ -462,14 +462,14 @@ const fragmentShader = /*glsl*/`
         crack_depth_4 *= 0.5 + 0.5 * noise13(cp*vec3(0.7,10.0,0.7));
         
         // bubbles    
-        dir.xz += norm.xz * REFRACTION * 0.3;
+        dir.xz += norm.xz * 0.3;
         vec3 bp;
-        intersectionPlane(cam+vec3(0.,0.5,0.),dir,bp);        
-        //col += pow(noise13(bp * 14.0),20.0) * BUBBLES_BRIGHTNESS * gth;
-        //intersectionPlane(cam+vec3(0.,1.,0.),dir,bp);        
-        //col += pow(noise13(bp * 15.0),20.0) * BUBBLES_BRIGHTNESS * gth;
-        //intersectionPlane(cam+vec3(0.,2.,0.),dir,bp);        
-        //col += pow(noise13(bp * 16.0),20.0) * BUBBLES_BRIGHTNESS * gth;
+        bp = p + dir * 0.3;
+        col += pow(noise13(bp * 14.0),20.0) * BUBBLES_BRIGHTNESS * gth;
+        bp = p + dir * 0.6;
+        col += pow(noise13(bp * 15.0),20.0) * BUBBLES_BRIGHTNESS * gth;
+        bp = p + dir * 0.9;
+        col += pow(noise13(bp * 16.0),20.0) * BUBBLES_BRIGHTNESS * gth;
         
         // cracks color
         vec3 crc = toLinear(CRACKS_COLOR);
@@ -505,13 +505,9 @@ const fragmentShader = /*glsl*/`
 
         //merge everything
         // base color
-        float dis2P = 10.0;
-        vec3 virtualP = vec3(p.x+e.x*dis2P,p.y+e.y*dis2P,0);
 
-        float noiseFactor1 = cnoise3(virtualP*noiseScale);
-        float noiseFactor2 = hash3(virtualP.xy*noiseScale);
+        float noiseFactor = cnoise3(p * noiseScale);
 
-        float noiseFactor = mix(noiseFactor1,noiseFactor2,0.5);
         vec3 base_col = mix(baseColorL, baseColorH, noiseFactor);
         col = col*0.4 + base_col;
 
@@ -543,7 +539,8 @@ const fragmentShader = /*glsl*/`
         //rotate to fit rotation
 
         dir = normalize(dir * rot);
-        vec3 ori = dir *rot* disCam;
+        //vec3 ori = dir *rot* disCam;
+        vec3 ori = vcamP*disCam;
 
         vec3 surfaceNormal = vec3(0.0,1.0,0.0);
        

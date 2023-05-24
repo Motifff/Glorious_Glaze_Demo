@@ -40,7 +40,7 @@ function ShaderBox(props) {
         <RoundedBox args={[1.0,1.0,1.0]} radius={0.05} ref={ref}>
           <customMaterial key={CustomMaterial.key}/>
         </RoundedBox>
-        <RoundedBox args={[1.02,0.4,1.02]} radius={0.05}>
+        <RoundedBox args={[1.02,0.8,1.02]} radius={0.05}>
           <meshBasicMaterial attach="material" color={'#3F2A17'} />
         </RoundedBox>
       </mesh>
