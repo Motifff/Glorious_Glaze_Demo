@@ -3,7 +3,6 @@ import { useSpring, animated } from '@react-spring/web'
 import './App.css';
 import ContentPage from './pages/content_page';
 import MainPage from './pages/main_page';
-import { Vector3 } from 'three';
 import * as THREE from 'three'
 
 
