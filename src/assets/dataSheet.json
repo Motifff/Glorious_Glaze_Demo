@@ -1,0 +1,4466 @@
+[
+    [
+        {
+            "sectionName": "\u6211\u7684\u6536\u85cf",
+            "type": "like",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247A1H2",
+                    "image": "/tile_image/A1H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247A1H4",
+                    "image": "/tile_image/A1H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247A2H3",
+                    "image": "/tile_image/A2H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247A3H3",
+                    "image": "/tile_image/A3H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247A4H1",
+                    "image": "/tile_image/A4H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247B1B1",
+                    "image": "/tile_image/B1B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247B1H1",
+                    "image": "/tile_image/B1H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247B2B2",
+                    "image": "/tile_image/B2B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247B2B5",
+                    "image": "/tile_image/B2B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247B3H1",
+                    "image": "/tile_image/B3H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247B4H5",
+                    "image": "/tile_image/B4H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247B6H5",
+                    "image": "/tile_image/B6H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247C2H4",
+                    "image": "/tile_image/C2H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247C3B5",
+                    "image": "/tile_image/C3B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247D2H5",
+                    "image": "/tile_image/D2H5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247D3B3",
+                    "image": "/tile_image/D3B3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                }
+            ]
+        },
+        {
+            "sectionName": "\u914d\u91c9\u6750\u8d28\u5e93",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247A1B1",
+                    "image": "/tile_image/A1B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247A1B2",
+                    "image": "/tile_image/A1B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247A1B3",
+                    "image": "/tile_image/A1B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247A1B4",
+                    "image": "/tile_image/A1B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247A1B5",
+                    "image": "/tile_image/A1B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247A1H1",
+                    "image": "/tile_image/A1H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247A1H3",
+                    "image": "/tile_image/A1H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247A1H5",
+                    "image": "/tile_image/A1H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247A2B1",
+                    "image": "/tile_image/A2B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247A2B2",
+                    "image": "/tile_image/A2B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247A2B3",
+                    "image": "/tile_image/A2B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247A2B4",
+                    "image": "/tile_image/A2B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247A2B5",
+                    "image": "/tile_image/A2B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247A2H1",
+                    "image": "/tile_image/A2H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247A2H2",
+                    "image": "/tile_image/A2H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247A2H4",
+                    "image": "/tile_image/A2H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247A2H5",
+                    "image": "/tile_image/A2H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247A3B1",
+                    "image": "/tile_image/A3B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247A3B2",
+                    "image": "/tile_image/A3B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247A3B3",
+                    "image": "/tile_image/A3B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247A3B4",
+                    "image": "/tile_image/A3B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247A3B5",
+                    "image": "/tile_image/A3B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247A3H1",
+                    "image": "/tile_image/A3H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247A3H2",
+                    "image": "/tile_image/A3H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247A3H4",
+                    "image": "/tile_image/A3H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247A3H5",
+                    "image": "/tile_image/A3H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247A4B1",
+                    "image": "/tile_image/A4B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247A4B2",
+                    "image": "/tile_image/A4B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 29,
+                    "name": "\u8bd5\u7247A4B3",
+                    "image": "/tile_image/A4B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 30,
+                    "name": "\u8bd5\u7247A4B4",
+                    "image": "/tile_image/A4B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 31,
+                    "name": "\u8bd5\u7247A4B5",
+                    "image": "/tile_image/A4B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 32,
+                    "name": "\u8bd5\u7247A4H2",
+                    "image": "/tile_image/A4H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 33,
+                    "name": "\u8bd5\u7247A4H3",
+                    "image": "/tile_image/A4H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 34,
+                    "name": "\u8bd5\u7247A4H4",
+                    "image": "/tile_image/A4H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 35,
+                    "name": "\u8bd5\u7247A4H5",
+                    "image": "/tile_image/A4H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 36,
+                    "name": "\u8bd5\u7247A5B1",
+                    "image": "/tile_image/A5B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 37,
+                    "name": "\u8bd5\u7247A5B2",
+                    "image": "/tile_image/A5B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 38,
+                    "name": "\u8bd5\u7247A5B3",
+                    "image": "/tile_image/A5B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 39,
+                    "name": "\u8bd5\u7247A5B4",
+                    "image": "/tile_image/A5B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 40,
+                    "name": "\u8bd5\u7247A5B5",
+                    "image": "/tile_image/A5B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 41,
+                    "name": "\u8bd5\u7247A5H1",
+                    "image": "/tile_image/A5H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 42,
+                    "name": "\u8bd5\u7247A5H2",
+                    "image": "/tile_image/A5H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 43,
+                    "name": "\u8bd5\u7247A5H3",
+                    "image": "/tile_image/A5H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 44,
+                    "name": "\u8bd5\u7247A5H4",
+                    "image": "/tile_image/A5H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 45,
+                    "name": "\u8bd5\u7247A5H5",
+                    "image": "/tile_image/A5H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 46,
+                    "name": "\u8bd5\u7247A6B1",
+                    "image": "/tile_image/A6B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 47,
+                    "name": "\u8bd5\u7247A6B2",
+                    "image": "/tile_image/A6B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 48,
+                    "name": "\u8bd5\u7247A6B3",
+                    "image": "/tile_image/A6B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 49,
+                    "name": "\u8bd5\u7247A6B4",
+                    "image": "/tile_image/A6B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 50,
+                    "name": "\u8bd5\u7247A6B5",
+                    "image": "/tile_image/A6B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 51,
+                    "name": "\u8bd5\u7247A6H1",
+                    "image": "/tile_image/A6H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 52,
+                    "name": "\u8bd5\u7247A6H2",
+                    "image": "/tile_image/A6H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 53,
+                    "name": "\u8bd5\u7247A6H3",
+                    "image": "/tile_image/A6H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 54,
+                    "name": "\u8bd5\u7247A6H4",
+                    "image": "/tile_image/A6H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 55,
+                    "name": "\u8bd5\u7247A6H5",
+                    "image": "/tile_image/A6H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 56,
+                    "name": "\u8bd5\u7247A7B1",
+                    "image": "/tile_image/A7B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 57,
+                    "name": "\u8bd5\u7247A7B2",
+                    "image": "/tile_image/A7B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 58,
+                    "name": "\u8bd5\u7247A7B3",
+                    "image": "/tile_image/A7B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 59,
+                    "name": "\u8bd5\u7247A7B4",
+                    "image": "/tile_image/A7B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 60,
+                    "name": "\u8bd5\u7247A7B5",
+                    "image": "/tile_image/A7B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 61,
+                    "name": "\u8bd5\u7247A7H1",
+                    "image": "/tile_image/A7H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 62,
+                    "name": "\u8bd5\u7247A7H2",
+                    "image": "/tile_image/A7H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 63,
+                    "name": "\u8bd5\u7247A7H3",
+                    "image": "/tile_image/A7H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 64,
+                    "name": "\u8bd5\u7247A7H4",
+                    "image": "/tile_image/A7H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 65,
+                    "name": "\u8bd5\u7247A7H5",
+                    "image": "/tile_image/A7H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 66,
+                    "name": "\u8bd5\u7247A8B1",
+                    "image": "/tile_image/A8B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 67,
+                    "name": "\u8bd5\u7247A8B2",
+                    "image": "/tile_image/A8B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 68,
+                    "name": "\u8bd5\u7247A8B3",
+                    "image": "/tile_image/A8B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 69,
+                    "name": "\u8bd5\u7247A8B4",
+                    "image": "/tile_image/A8B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 70,
+                    "name": "\u8bd5\u7247A8B5",
+                    "image": "/tile_image/A8B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 71,
+                    "name": "\u8bd5\u7247A8H1",
+                    "image": "/tile_image/A8H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 72,
+                    "name": "\u8bd5\u7247A8H2",
+                    "image": "/tile_image/A8H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 73,
+                    "name": "\u8bd5\u7247A8H3",
+                    "image": "/tile_image/A8H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 74,
+                    "name": "\u8bd5\u7247A8H4",
+                    "image": "/tile_image/A8H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 75,
+                    "name": "\u8bd5\u7247A8H5",
+                    "image": "/tile_image/A8H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 76,
+                    "name": "\u8bd5\u7247A9B1",
+                    "image": "/tile_image/A9B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 77,
+                    "name": "\u8bd5\u7247A9B2",
+                    "image": "/tile_image/A9B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 78,
+                    "name": "\u8bd5\u7247A9B3",
+                    "image": "/tile_image/A9B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 79,
+                    "name": "\u8bd5\u7247A9B4",
+                    "image": "/tile_image/A9B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 80,
+                    "name": "\u8bd5\u7247A9B5",
+                    "image": "/tile_image/A9B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 81,
+                    "name": "\u8bd5\u7247A9H1",
+                    "image": "/tile_image/A9H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 82,
+                    "name": "\u8bd5\u7247A9H2",
+                    "image": "/tile_image/A9H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 83,
+                    "name": "\u8bd5\u7247A9H3",
+                    "image": "/tile_image/A9H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 84,
+                    "name": "\u8bd5\u7247A9H4",
+                    "image": "/tile_image/A9H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 85,
+                    "name": "\u8bd5\u7247A9H5",
+                    "image": "/tile_image/A9H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 86,
+                    "name": "\u8bd5\u7247B1B2",
+                    "image": "/tile_image/B1B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 87,
+                    "name": "\u8bd5\u7247B1B3",
+                    "image": "/tile_image/B1B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 88,
+                    "name": "\u8bd5\u7247B1B4",
+                    "image": "/tile_image/B1B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 89,
+                    "name": "\u8bd5\u7247B1B5",
+                    "image": "/tile_image/B1B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 90,
+                    "name": "\u8bd5\u7247B1H2",
+                    "image": "/tile_image/B1H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 91,
+                    "name": "\u8bd5\u7247B1H3",
+                    "image": "/tile_image/B1H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 92,
+                    "name": "\u8bd5\u7247B1H4",
+                    "image": "/tile_image/B1H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 93,
+                    "name": "\u8bd5\u7247B1H5",
+                    "image": "/tile_image/B1H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 94,
+                    "name": "\u8bd5\u7247B2B1",
+                    "image": "/tile_image/B2B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 95,
+                    "name": "\u8bd5\u7247B2B3",
+                    "image": "/tile_image/B2B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 96,
+                    "name": "\u8bd5\u7247B2B4",
+                    "image": "/tile_image/B2B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 97,
+                    "name": "\u8bd5\u7247B2H1",
+                    "image": "/tile_image/B2H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 98,
+                    "name": "\u8bd5\u7247B2H2",
+                    "image": "/tile_image/B2H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 99,
+                    "name": "\u8bd5\u7247B2H3",
+                    "image": "/tile_image/B2H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 100,
+                    "name": "\u8bd5\u7247B2H4",
+                    "image": "/tile_image/B2H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 101,
+                    "name": "\u8bd5\u7247B2H5",
+                    "image": "/tile_image/B2H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 102,
+                    "name": "\u8bd5\u7247B3B1",
+                    "image": "/tile_image/B3B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 103,
+                    "name": "\u8bd5\u7247B3B2",
+                    "image": "/tile_image/B3B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 104,
+                    "name": "\u8bd5\u7247B3B3",
+                    "image": "/tile_image/B3B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 105,
+                    "name": "\u8bd5\u7247B3B4",
+                    "image": "/tile_image/B3B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 106,
+                    "name": "\u8bd5\u7247B3B5",
+                    "image": "/tile_image/B3B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 107,
+                    "name": "\u8bd5\u7247B3H2",
+                    "image": "/tile_image/B3H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 108,
+                    "name": "\u8bd5\u7247B3H3",
+                    "image": "/tile_image/B3H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 109,
+                    "name": "\u8bd5\u7247B3H4",
+                    "image": "/tile_image/B3H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 110,
+                    "name": "\u8bd5\u7247B3H5",
+                    "image": "/tile_image/B3H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 111,
+                    "name": "\u8bd5\u7247B4B1",
+                    "image": "/tile_image/B4B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 112,
+                    "name": "\u8bd5\u7247B4B2",
+                    "image": "/tile_image/B4B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 113,
+                    "name": "\u8bd5\u7247B4B3",
+                    "image": "/tile_image/B4B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 114,
+                    "name": "\u8bd5\u7247B4B4",
+                    "image": "/tile_image/B4B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 115,
+                    "name": "\u8bd5\u7247B4B5",
+                    "image": "/tile_image/B4B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 116,
+                    "name": "\u8bd5\u7247B4H1",
+                    "image": "/tile_image/B4H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 117,
+                    "name": "\u8bd5\u7247B4H2",
+                    "image": "/tile_image/B4H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 118,
+                    "name": "\u8bd5\u7247B4H3",
+                    "image": "/tile_image/B4H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 119,
+                    "name": "\u8bd5\u7247B4H4",
+                    "image": "/tile_image/B4H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 120,
+                    "name": "\u8bd5\u7247B5B1",
+                    "image": "/tile_image/B5B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 121,
+                    "name": "\u8bd5\u7247B5B2",
+                    "image": "/tile_image/B5B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 122,
+                    "name": "\u8bd5\u7247B5B3",
+                    "image": "/tile_image/B5B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 123,
+                    "name": "\u8bd5\u7247B5B4",
+                    "image": "/tile_image/B5B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 124,
+                    "name": "\u8bd5\u7247B5B5",
+                    "image": "/tile_image/B5B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 125,
+                    "name": "\u8bd5\u7247B5H1",
+                    "image": "/tile_image/B5H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 126,
+                    "name": "\u8bd5\u7247B5H2",
+                    "image": "/tile_image/B5H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 127,
+                    "name": "\u8bd5\u7247B5H3",
+                    "image": "/tile_image/B5H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 128,
+                    "name": "\u8bd5\u7247B5H4",
+                    "image": "/tile_image/B5H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 129,
+                    "name": "\u8bd5\u7247B5H5",
+                    "image": "/tile_image/B5H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 130,
+                    "name": "\u8bd5\u7247B6B1",
+                    "image": "/tile_image/B6B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 131,
+                    "name": "\u8bd5\u7247B6B2",
+                    "image": "/tile_image/B6B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 132,
+                    "name": "\u8bd5\u7247B6B3",
+                    "image": "/tile_image/B6B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 133,
+                    "name": "\u8bd5\u7247B6B4",
+                    "image": "/tile_image/B6B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 134,
+                    "name": "\u8bd5\u7247B6H1",
+                    "image": "/tile_image/B6H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 135,
+                    "name": "\u8bd5\u7247B6H2",
+                    "image": "/tile_image/B6H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 136,
+                    "name": "\u8bd5\u7247B6H3",
+                    "image": "/tile_image/B6H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 137,
+                    "name": "\u8bd5\u7247B6H4",
+                    "image": "/tile_image/B6H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 138,
+                    "name": "\u8bd5\u7247C1B1",
+                    "image": "/tile_image/C1B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 139,
+                    "name": "\u8bd5\u7247C1B2",
+                    "image": "/tile_image/C1B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 140,
+                    "name": "\u8bd5\u7247C1B3",
+                    "image": "/tile_image/C1B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 141,
+                    "name": "\u8bd5\u7247C1B4",
+                    "image": "/tile_image/C1B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 142,
+                    "name": "\u8bd5\u7247C1B5",
+                    "image": "/tile_image/C1B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 143,
+                    "name": "\u8bd5\u7247C1H1",
+                    "image": "/tile_image/C1H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 144,
+                    "name": "\u8bd5\u7247C1H2",
+                    "image": "/tile_image/C1H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 145,
+                    "name": "\u8bd5\u7247C1H3",
+                    "image": "/tile_image/C1H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 146,
+                    "name": "\u8bd5\u7247C1H4",
+                    "image": "/tile_image/C1H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 147,
+                    "name": "\u8bd5\u7247C1H5",
+                    "image": "/tile_image/C1H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 148,
+                    "name": "\u8bd5\u7247C2B1",
+                    "image": "/tile_image/C2B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 149,
+                    "name": "\u8bd5\u7247C2B2",
+                    "image": "/tile_image/C2B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 150,
+                    "name": "\u8bd5\u7247C2B3",
+                    "image": "/tile_image/C2B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 151,
+                    "name": "\u8bd5\u7247C2B4",
+                    "image": "/tile_image/C2B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 152,
+                    "name": "\u8bd5\u7247C2B5",
+                    "image": "/tile_image/C2B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 153,
+                    "name": "\u8bd5\u7247C2H1",
+                    "image": "/tile_image/C2H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 154,
+                    "name": "\u8bd5\u7247C2H2",
+                    "image": "/tile_image/C2H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 155,
+                    "name": "\u8bd5\u7247C2H3",
+                    "image": "/tile_image/C2H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 156,
+                    "name": "\u8bd5\u7247C2H5",
+                    "image": "/tile_image/C2H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 157,
+                    "name": "\u8bd5\u7247C3B1",
+                    "image": "/tile_image/C3B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 158,
+                    "name": "\u8bd5\u7247C3B2",
+                    "image": "/tile_image/C3B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 159,
+                    "name": "\u8bd5\u7247C3B3",
+                    "image": "/tile_image/C3B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 160,
+                    "name": "\u8bd5\u7247C3B4",
+                    "image": "/tile_image/C3B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 161,
+                    "name": "\u8bd5\u7247C3H1",
+                    "image": "/tile_image/C3H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 162,
+                    "name": "\u8bd5\u7247C3H2",
+                    "image": "/tile_image/C3H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 163,
+                    "name": "\u8bd5\u7247C3H3",
+                    "image": "/tile_image/C3H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 164,
+                    "name": "\u8bd5\u7247C3H4",
+                    "image": "/tile_image/C3H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 165,
+                    "name": "\u8bd5\u7247C3H5",
+                    "image": "/tile_image/C3H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 166,
+                    "name": "\u8bd5\u7247C4B1",
+                    "image": "/tile_image/C4B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 167,
+                    "name": "\u8bd5\u7247C4B2",
+                    "image": "/tile_image/C4B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 168,
+                    "name": "\u8bd5\u7247C4B3",
+                    "image": "/tile_image/C4B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 169,
+                    "name": "\u8bd5\u7247C4B4",
+                    "image": "/tile_image/C4B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 170,
+                    "name": "\u8bd5\u7247C4B5",
+                    "image": "/tile_image/C4B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 171,
+                    "name": "\u8bd5\u7247C4H1",
+                    "image": "/tile_image/C4H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 172,
+                    "name": "\u8bd5\u7247C4H2",
+                    "image": "/tile_image/C4H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 173,
+                    "name": "\u8bd5\u7247C4H3",
+                    "image": "/tile_image/C4H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 174,
+                    "name": "\u8bd5\u7247C4H4",
+                    "image": "/tile_image/C4H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 175,
+                    "name": "\u8bd5\u7247C4H5",
+                    "image": "/tile_image/C4H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 176,
+                    "name": "\u8bd5\u7247D1B1",
+                    "image": "/tile_image/D1B1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 177,
+                    "name": "\u8bd5\u7247D1B2",
+                    "image": "/tile_image/D1B2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 178,
+                    "name": "\u8bd5\u7247D1B3",
+                    "image": "/tile_image/D1B3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 179,
+                    "name": "\u8bd5\u7247D1B4",
+                    "image": "/tile_image/D1B4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 180,
+                    "name": "\u8bd5\u7247D1B5",
+                    "image": "/tile_image/D1B5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 181,
+                    "name": "\u8bd5\u7247D1H1",
+                    "image": "/tile_image/D1H1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 182,
+                    "name": "\u8bd5\u7247D1H2",
+                    "image": "/tile_image/D1H2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 183,
+                    "name": "\u8bd5\u7247D1H3",
+                    "image": "/tile_image/D1H3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 184,
+                    "name": "\u8bd5\u7247D1H4",
+                    "image": "/tile_image/D1H4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 185,
+                    "name": "\u8bd5\u7247D1H5",
+                    "image": "/tile_image/D1H5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 186,
+                    "name": "\u8bd5\u7247D2B1",
+                    "image": "/tile_image/D2B1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 187,
+                    "name": "\u8bd5\u7247D2B2",
+                    "image": "/tile_image/D2B2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 188,
+                    "name": "\u8bd5\u7247D2B3",
+                    "image": "/tile_image/D2B3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 189,
+                    "name": "\u8bd5\u7247D2B4",
+                    "image": "/tile_image/D2B4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 190,
+                    "name": "\u8bd5\u7247D2B5",
+                    "image": "/tile_image/D2B5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 191,
+                    "name": "\u8bd5\u7247D2H1",
+                    "image": "/tile_image/D2H1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 192,
+                    "name": "\u8bd5\u7247D2H2",
+                    "image": "/tile_image/D2H2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 193,
+                    "name": "\u8bd5\u7247D2H3",
+                    "image": "/tile_image/D2H3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 194,
+                    "name": "\u8bd5\u7247D2H4",
+                    "image": "/tile_image/D2H4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 195,
+                    "name": "\u8bd5\u7247D3B1",
+                    "image": "/tile_image/D3B1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 196,
+                    "name": "\u8bd5\u7247D3B2",
+                    "image": "/tile_image/D3B2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 197,
+                    "name": "\u8bd5\u7247D3B4",
+                    "image": "/tile_image/D3B4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 198,
+                    "name": "\u8bd5\u7247D3B5",
+                    "image": "/tile_image/D3B5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 199,
+                    "name": "\u8bd5\u7247D3H1",
+                    "image": "/tile_image/D3H1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 200,
+                    "name": "\u8bd5\u7247D3H2",
+                    "image": "/tile_image/D3H2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 201,
+                    "name": "\u8bd5\u7247D3H3",
+                    "image": "/tile_image/D3H3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 202,
+                    "name": "\u8bd5\u7247D3H4",
+                    "image": "/tile_image/D3H4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 203,
+                    "name": "\u8bd5\u7247D3H5",
+                    "image": "/tile_image/D3H5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 204,
+                    "name": "",
+                    "image": "",
+                    "selected": false,
+                    "MaterialData0": "",
+                    "MaterialData1": "",
+                    "MaterialData2": "",
+                    "MaterialData3": ""
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "sectionName": "2023\u5e745\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247A1B1",
+                    "image": "/tile_image/A1B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247A1B2",
+                    "image": "/tile_image/A1B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247A1B3",
+                    "image": "/tile_image/A1B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247A1B4",
+                    "image": "/tile_image/A1B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247A1B5",
+                    "image": "/tile_image/A1B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247A1H1",
+                    "image": "/tile_image/A1H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247A1H2",
+                    "image": "/tile_image/A1H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247A1H3",
+                    "image": "/tile_image/A1H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247A1H4",
+                    "image": "/tile_image/A1H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247A1H5",
+                    "image": "/tile_image/A1H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "2",
+                    "MaterialData2": "36",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247A2B1",
+                    "image": "/tile_image/A2B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247A2B2",
+                    "image": "/tile_image/A2B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247A2B3",
+                    "image": "/tile_image/A2B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247A2B4",
+                    "image": "/tile_image/A2B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247A2B5",
+                    "image": "/tile_image/A2B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247A2H1",
+                    "image": "/tile_image/A2H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247A2H2",
+                    "image": "/tile_image/A2H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247A2H3",
+                    "image": "/tile_image/A2H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247A2H4",
+                    "image": "/tile_image/A2H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247A2H5",
+                    "image": "/tile_image/A2H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "4",
+                    "MaterialData2": "34",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247A3B1",
+                    "image": "/tile_image/A3B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247A3B2",
+                    "image": "/tile_image/A3B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                }
+            ]
+        },
+        {
+            "sectionName": "2023\u5e744\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247A3B3",
+                    "image": "/tile_image/A3B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247A3B4",
+                    "image": "/tile_image/A3B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247A3B5",
+                    "image": "/tile_image/A3B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247A3H1",
+                    "image": "/tile_image/A3H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247A3H2",
+                    "image": "/tile_image/A3H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247A3H3",
+                    "image": "/tile_image/A3H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247A3H4",
+                    "image": "/tile_image/A3H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247A3H5",
+                    "image": "/tile_image/A3H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "8",
+                    "MaterialData2": "30",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247A4B1",
+                    "image": "/tile_image/A4B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247A4B2",
+                    "image": "/tile_image/A4B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247A4B3",
+                    "image": "/tile_image/A4B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247A4B4",
+                    "image": "/tile_image/A4B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247A4B5",
+                    "image": "/tile_image/A4B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247A4H1",
+                    "image": "/tile_image/A4H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247A4H2",
+                    "image": "/tile_image/A4H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247A4H3",
+                    "image": "/tile_image/A4H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247A4H4",
+                    "image": "/tile_image/A4H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247A4H5",
+                    "image": "/tile_image/A4H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "12",
+                    "MaterialData2": "26",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247A5B1",
+                    "image": "/tile_image/A5B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247A5B2",
+                    "image": "/tile_image/A5B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247A5B3",
+                    "image": "/tile_image/A5B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247A5B4",
+                    "image": "/tile_image/A5B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247A5B5",
+                    "image": "/tile_image/A5B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247A5H1",
+                    "image": "/tile_image/A5H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247A5H2",
+                    "image": "/tile_image/A5H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247A5H3",
+                    "image": "/tile_image/A5H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247A5H4",
+                    "image": "/tile_image/A5H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247A5H5",
+                    "image": "/tile_image/A5H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "16",
+                    "MaterialData2": "22",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 29,
+                    "name": "\u8bd5\u7247A6B1",
+                    "image": "/tile_image/A6B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 30,
+                    "name": "\u8bd5\u7247A6B2",
+                    "image": "/tile_image/A6B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                }
+            ]
+        },
+        {
+            "sectionName": "2023\u5e743\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247A6B3",
+                    "image": "/tile_image/A6B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247A6B4",
+                    "image": "/tile_image/A6B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247A6B5",
+                    "image": "/tile_image/A6B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247A6H1",
+                    "image": "/tile_image/A6H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247A6H2",
+                    "image": "/tile_image/A6H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247A6H3",
+                    "image": "/tile_image/A6H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247A6H4",
+                    "image": "/tile_image/A6H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247A6H5",
+                    "image": "/tile_image/A6H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "20",
+                    "MaterialData2": "18",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247A7B1",
+                    "image": "/tile_image/A7B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247A7B2",
+                    "image": "/tile_image/A7B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247A7B3",
+                    "image": "/tile_image/A7B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247A7B4",
+                    "image": "/tile_image/A7B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247A7B5",
+                    "image": "/tile_image/A7B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247A7H1",
+                    "image": "/tile_image/A7H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247A7H2",
+                    "image": "/tile_image/A7H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247A7H3",
+                    "image": "/tile_image/A7H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247A7H4",
+                    "image": "/tile_image/A7H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247A7H5",
+                    "image": "/tile_image/A7H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "24",
+                    "MaterialData2": "14",
+                    "MaterialData3": "75"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247A8B1",
+                    "image": "/tile_image/A8B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247A8B2",
+                    "image": "/tile_image/A8B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247A8B3",
+                    "image": "/tile_image/A8B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247A8B4",
+                    "image": "/tile_image/A8B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247A8B5",
+                    "image": "/tile_image/A8B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247A8H1",
+                    "image": "/tile_image/A8H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247A8H2",
+                    "image": "/tile_image/A8H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247A8H3",
+                    "image": "/tile_image/A8H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247A8H4",
+                    "image": "/tile_image/A8H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247A8H5",
+                    "image": "/tile_image/A8H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "28",
+                    "MaterialData2": "10",
+                    "MaterialData3": "87"
+                },
+                {
+                    "order": 29,
+                    "name": "\u8bd5\u7247A9B1",
+                    "image": "/tile_image/A9B1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 30,
+                    "name": "\u8bd5\u7247A9B2",
+                    "image": "/tile_image/A9B2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 31,
+                    "name": "\u8bd5\u7247A9B3",
+                    "image": "/tile_image/A9B3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 32,
+                    "name": "\u8bd5\u7247A9B4",
+                    "image": "/tile_image/A9B4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                }
+            ]
+        },
+        {
+            "sectionName": "2023\u5e742\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247A9B5",
+                    "image": "/tile_image/A9B5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247A9H1",
+                    "image": "/tile_image/A9H1.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247A9H2",
+                    "image": "/tile_image/A9H2.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247A9H3",
+                    "image": "/tile_image/A9H3.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247A9H4",
+                    "image": "/tile_image/A9H4.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247A9H5",
+                    "image": "/tile_image/A9H5.png",
+                    "selected": false,
+                    "MaterialData0": "40",
+                    "MaterialData1": "32",
+                    "MaterialData2": "6",
+                    "MaterialData3": "100"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247B1B1",
+                    "image": "/tile_image/B1B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247B1B2",
+                    "image": "/tile_image/B1B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247B1B3",
+                    "image": "/tile_image/B1B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247B1B4",
+                    "image": "/tile_image/B1B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247B1B5",
+                    "image": "/tile_image/B1B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247B1H1",
+                    "image": "/tile_image/B1H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247B1H2",
+                    "image": "/tile_image/B1H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247B1H3",
+                    "image": "/tile_image/B1H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247B1H4",
+                    "image": "/tile_image/B1H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247B1H5",
+                    "image": "/tile_image/B1H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "4",
+                    "MaterialData2": "24",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247B2B1",
+                    "image": "/tile_image/B2B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247B2B2",
+                    "image": "/tile_image/B2B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247B2B3",
+                    "image": "/tile_image/B2B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247B2B4",
+                    "image": "/tile_image/B2B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247B2B5",
+                    "image": "/tile_image/B2B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247B2H1",
+                    "image": "/tile_image/B2H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247B2H2",
+                    "image": "/tile_image/B2H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247B2H3",
+                    "image": "/tile_image/B2H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247B2H4",
+                    "image": "/tile_image/B2H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247B2H5",
+                    "image": "/tile_image/B2H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "8",
+                    "MaterialData2": "20",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247B3B1",
+                    "image": "/tile_image/B3B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247B3B2",
+                    "image": "/tile_image/B3B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                }
+            ]
+        },
+        {
+            "sectionName": "2023\u5e741\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247B3B3",
+                    "image": "/tile_image/B3B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247B3B4",
+                    "image": "/tile_image/B3B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247B3B5",
+                    "image": "/tile_image/B3B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247B3H1",
+                    "image": "/tile_image/B3H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247B3H2",
+                    "image": "/tile_image/B3H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247B3H3",
+                    "image": "/tile_image/B3H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247B3H4",
+                    "image": "/tile_image/B3H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247B3H5",
+                    "image": "/tile_image/B3H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "12",
+                    "MaterialData2": "16",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247B4B1",
+                    "image": "/tile_image/B4B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247B4B2",
+                    "image": "/tile_image/B4B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247B4B3",
+                    "image": "/tile_image/B4B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247B4B4",
+                    "image": "/tile_image/B4B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247B4B5",
+                    "image": "/tile_image/B4B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247B4H1",
+                    "image": "/tile_image/B4H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247B4H2",
+                    "image": "/tile_image/B4H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247B4H3",
+                    "image": "/tile_image/B4H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247B4H4",
+                    "image": "/tile_image/B4H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247B4H5",
+                    "image": "/tile_image/B4H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "16",
+                    "MaterialData2": "12",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247B5B1",
+                    "image": "/tile_image/B5B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247B5B2",
+                    "image": "/tile_image/B5B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247B5B3",
+                    "image": "/tile_image/B5B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247B5B4",
+                    "image": "/tile_image/B5B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247B5B5",
+                    "image": "/tile_image/B5B5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247B5H1",
+                    "image": "/tile_image/B5H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247B5H2",
+                    "image": "/tile_image/B5H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247B5H3",
+                    "image": "/tile_image/B5H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247B5H4",
+                    "image": "/tile_image/B5H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247B5H5",
+                    "image": "/tile_image/B5H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "20",
+                    "MaterialData2": "8",
+                    "MaterialData3": "50"
+                },
+                {
+                    "order": 29,
+                    "name": "\u8bd5\u7247B6B1",
+                    "image": "/tile_image/B6B1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 30,
+                    "name": "\u8bd5\u7247B6B2",
+                    "image": "/tile_image/B6B2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 31,
+                    "name": "\u8bd5\u7247B6B3",
+                    "image": "/tile_image/B6B3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                }
+            ]
+        },
+        {
+            "sectionName": "2022\u5e7412\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247B6B4",
+                    "image": "/tile_image/B6B4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247B6H1",
+                    "image": "/tile_image/B6H1.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247B6H2",
+                    "image": "/tile_image/B6H2.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247B6H3",
+                    "image": "/tile_image/B6H3.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247B6H4",
+                    "image": "/tile_image/B6H4.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247B6H5",
+                    "image": "/tile_image/B6H5.png",
+                    "selected": false,
+                    "MaterialData0": "50",
+                    "MaterialData1": "24",
+                    "MaterialData2": "4",
+                    "MaterialData3": "62"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247C1B1",
+                    "image": "/tile_image/C1B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247C1B2",
+                    "image": "/tile_image/C1B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247C1B3",
+                    "image": "/tile_image/C1B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247C1B4",
+                    "image": "/tile_image/C1B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247C1B5",
+                    "image": "/tile_image/C1B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247C1H1",
+                    "image": "/tile_image/C1H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247C1H2",
+                    "image": "/tile_image/C1H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247C1H3",
+                    "image": "/tile_image/C1H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247C1H4",
+                    "image": "/tile_image/C1H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247C1H5",
+                    "image": "/tile_image/C1H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "4",
+                    "MaterialData2": "14",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247C2B1",
+                    "image": "/tile_image/C2B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247C2B2",
+                    "image": "/tile_image/C2B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247C2B3",
+                    "image": "/tile_image/C2B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247C2B4",
+                    "image": "/tile_image/C2B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247C2B5",
+                    "image": "/tile_image/C2B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247C2H1",
+                    "image": "/tile_image/C2H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247C2H2",
+                    "image": "/tile_image/C2H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247C2H3",
+                    "image": "/tile_image/C2H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247C2H4",
+                    "image": "/tile_image/C2H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247C2H5",
+                    "image": "/tile_image/C2H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "8",
+                    "MaterialData2": "10",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247C3B1",
+                    "image": "/tile_image/C3B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247C3B2",
+                    "image": "/tile_image/C3B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 29,
+                    "name": "\u8bd5\u7247C3B3",
+                    "image": "/tile_image/C3B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 30,
+                    "name": "\u8bd5\u7247C3B4",
+                    "image": "/tile_image/C3B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 31,
+                    "name": "\u8bd5\u7247C3B5",
+                    "image": "/tile_image/C3B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                }
+            ]
+        },
+        {
+            "sectionName": "2022\u5e7411\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247C3H1",
+                    "image": "/tile_image/C3H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247C3H2",
+                    "image": "/tile_image/C3H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247C3H3",
+                    "image": "/tile_image/C3H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247C3H4",
+                    "image": "/tile_image/C3H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247C3H5",
+                    "image": "/tile_image/C3H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "12",
+                    "MaterialData2": "6",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247C4B1",
+                    "image": "/tile_image/C4B1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247C4B2",
+                    "image": "/tile_image/C4B2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247C4B3",
+                    "image": "/tile_image/C4B3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247C4B4",
+                    "image": "/tile_image/C4B4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247C4B5",
+                    "image": "/tile_image/C4B5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247C4H1",
+                    "image": "/tile_image/C4H1.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247C4H2",
+                    "image": "/tile_image/C4H2.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247C4H3",
+                    "image": "/tile_image/C4H3.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247C4H4",
+                    "image": "/tile_image/C4H4.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247C4H5",
+                    "image": "/tile_image/C4H5.png",
+                    "selected": false,
+                    "MaterialData0": "60",
+                    "MaterialData1": "16",
+                    "MaterialData2": "2",
+                    "MaterialData3": "37"
+                },
+                {
+                    "order": 16,
+                    "name": "\u8bd5\u7247D1B1",
+                    "image": "/tile_image/D1B1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 17,
+                    "name": "\u8bd5\u7247D1B2",
+                    "image": "/tile_image/D1B2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 18,
+                    "name": "\u8bd5\u7247D1B3",
+                    "image": "/tile_image/D1B3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 19,
+                    "name": "\u8bd5\u7247D1B4",
+                    "image": "/tile_image/D1B4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 20,
+                    "name": "\u8bd5\u7247D1B5",
+                    "image": "/tile_image/D1B5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 21,
+                    "name": "\u8bd5\u7247D1H1",
+                    "image": "/tile_image/D1H1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 22,
+                    "name": "\u8bd5\u7247D1H2",
+                    "image": "/tile_image/D1H2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 23,
+                    "name": "\u8bd5\u7247D1H3",
+                    "image": "/tile_image/D1H3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 24,
+                    "name": "\u8bd5\u7247D1H4",
+                    "image": "/tile_image/D1H4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 25,
+                    "name": "\u8bd5\u7247D1H5",
+                    "image": "/tile_image/D1H5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "0",
+                    "MaterialData2": "8",
+                    "MaterialData3": "0"
+                },
+                {
+                    "order": 26,
+                    "name": "\u8bd5\u7247D2B1",
+                    "image": "/tile_image/D2B1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 27,
+                    "name": "\u8bd5\u7247D2B2",
+                    "image": "/tile_image/D2B2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 28,
+                    "name": "\u8bd5\u7247D2B3",
+                    "image": "/tile_image/D2B3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 29,
+                    "name": "\u8bd5\u7247D2B4",
+                    "image": "/tile_image/D2B4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 30,
+                    "name": "\u8bd5\u7247D2B5",
+                    "image": "/tile_image/D2B5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                }
+            ]
+        },
+        {
+            "sectionName": "2022\u5e7410\u6708",
+            "type": "regular",
+            "tiles": [
+                {
+                    "order": 1,
+                    "name": "\u8bd5\u7247D2H1",
+                    "image": "/tile_image/D2H1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 2,
+                    "name": "\u8bd5\u7247D2H2",
+                    "image": "/tile_image/D2H2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 3,
+                    "name": "\u8bd5\u7247D2H3",
+                    "image": "/tile_image/D2H3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 4,
+                    "name": "\u8bd5\u7247D2H4",
+                    "image": "/tile_image/D2H4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 5,
+                    "name": "\u8bd5\u7247D2H5",
+                    "image": "/tile_image/D2H5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "4",
+                    "MaterialData2": "4",
+                    "MaterialData3": "12"
+                },
+                {
+                    "order": 6,
+                    "name": "\u8bd5\u7247D3B1",
+                    "image": "/tile_image/D3B1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 7,
+                    "name": "\u8bd5\u7247D3B2",
+                    "image": "/tile_image/D3B2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 8,
+                    "name": "\u8bd5\u7247D3B3",
+                    "image": "/tile_image/D3B3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 9,
+                    "name": "\u8bd5\u7247D3B4",
+                    "image": "/tile_image/D3B4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 10,
+                    "name": "\u8bd5\u7247D3B5",
+                    "image": "/tile_image/D3B5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 11,
+                    "name": "\u8bd5\u7247D3H1",
+                    "image": "/tile_image/D3H1.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 12,
+                    "name": "\u8bd5\u7247D3H2",
+                    "image": "/tile_image/D3H2.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 13,
+                    "name": "\u8bd5\u7247D3H3",
+                    "image": "/tile_image/D3H3.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 14,
+                    "name": "\u8bd5\u7247D3H4",
+                    "image": "/tile_image/D3H4.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 15,
+                    "name": "\u8bd5\u7247D3H5",
+                    "image": "/tile_image/D3H5.png",
+                    "selected": false,
+                    "MaterialData0": "70",
+                    "MaterialData1": "8",
+                    "MaterialData2": "0",
+                    "MaterialData3": "25"
+                },
+                {
+                    "order": 16,
+                    "name": "",
+                    "image": "",
+                    "selected": false,
+                    "MaterialData0": "",
+                    "MaterialData1": "",
+                    "MaterialData2": "",
+                    "MaterialData3": ""
+                }
+            ]
+        }
+    ]
+]

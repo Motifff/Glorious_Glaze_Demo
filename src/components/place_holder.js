@@ -59,7 +59,9 @@ function Section(props) {
                 isSelectable={state.ifSelectable}
                 func={props.eachFunc}
                 func1={props.eachFunc1}
-                sectionName={state.sectionName} />);
+                sectionName={state.sectionName}
+                data={tile}
+                />);
         return (
             <div
                 style={{
@@ -119,6 +121,7 @@ function Section(props) {
                 func={props.eachFunc}
                 func1={props.eachFunc1}
                 sectionName={state.sectionName}
+                data={tile}
             />);
         return (
             <div

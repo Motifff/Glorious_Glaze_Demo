@@ -29,6 +29,12 @@ function Tile(props) {
         props.func(props.sectionName,props.order)
     }
 
+    const handleShow = () => {
+        props.func1(true,props.data)
+        console.log('trigged')
+        console.log(props.data)
+    }
+
     return (
         <animated.div
             style={{
@@ -40,17 +46,18 @@ function Tile(props) {
                 gap: props.scale * 10,
             }}
         >
-            <animated.div
+            <div
+                onClick={handleShow}
                 style={{
                     width: props.scale * 106,
                     height: props.scale * 106,
                     borderRadius: props.scale * 8,
                     filter: 'drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25))',
-                    backgroundImage: `url(${props.image})`,
+                    backgroundImage: `url(${process.env.PUBLIC_URL + props.image})`,
                     backgroundSize: 'cover',
                 }}
             >
-            </animated.div>
+            </div>
             <animated.div
                 style={{
                     width: props.scale * 106,

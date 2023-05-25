@@ -5,8 +5,6 @@ import backArrow from '../assets/icon=down.svg'
 import likeIcon from '../assets/icon=like.svg'
 import deleteIcon from '../assets/icon=delete.svg'
 import closeIcon from '../assets/icon=close.svg'
-import A1B1 from '../assets/tile_image/A1B1.png'
-
 
 function DisplayTile(props) {
     const [state, setState] = useState({
@@ -35,32 +33,9 @@ function DisplayTile(props) {
         })
     }
 
-    const itemList = () => {
-        const items = props.data.tiles.map((tile) =>
-            <Tile
-                order={tile.order}
-                name={tile.name}
-                scale={props.scale}
-                image={tile.image}
-                selected={tile.selected}
-                isSelectable={state.ifSelectable}
-                func={props.eachFunc}
-                func1={props.eachFunc1}
-                sectionName={state.sectionName}
-            />);
-        return (
-            <div
-                style={{
-                    width: props.scale * 354,
-                    boxSizing: 'border-box',
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: props.scale * 18,
-                }}
-            >
-                {items}
-            </div>
-        );
+    const handleExit = () =>{
+        props.exitFunc(false,null)
+        console.log('exit')
     }
 
     return (
@@ -87,7 +62,7 @@ function DisplayTile(props) {
                     height: props.scale * 354,
                     borderRadius: props.scale * 32,
                     filter: 'drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25))',
-                    backgroundImage: `url(${A1B1})`,
+                    backgroundImage: `url(${process.env.PUBLIC_URL + props.data.image})`,
                     backgroundSize: 'cover',
                 }}
             >
@@ -131,7 +106,7 @@ function DisplayTile(props) {
                         unicodeBidi: 'plaintext',
                     }}
                 >
-                    {"中文测试"}
+                    {props.data.name}
                 </div>
             </div>
             {!state.isFold ?
@@ -217,7 +192,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                91
+                            {props.data.MaterialData0}
                             </div>
                         </div>
                         <div
@@ -243,7 +218,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                黄塘石
+                                石灰石
                             </div>
                             <div
                                 style={{
@@ -271,7 +246,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                91
+                            {props.data.MaterialData1}
                             </div>
                         </div>
                         <div
@@ -297,7 +272,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                黄塘石
+                                滑石
                             </div>
                             <div
                                 style={{
@@ -325,7 +300,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                91
+                            {props.data.MaterialData2}
                             </div>
                         </div>
                         <div
@@ -351,7 +326,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                黄塘石
+                                氧化铁
                             </div>
                             <div
                                 style={{
@@ -379,7 +354,7 @@ function DisplayTile(props) {
                                     fontWeight: '600',
                                 }}
                             >
-                                91
+                            {props.data.MaterialData3}
                             </div>
                         </div>
                     </div>
@@ -414,6 +389,7 @@ function DisplayTile(props) {
                 }}
             >
                 <div
+                    onClick={handleExit}
                     style={{
                         width: props.scale * 32,
                         height: props.scale * 32,

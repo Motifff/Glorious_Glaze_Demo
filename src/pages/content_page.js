@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated, update } from '@react-spring/web'
 import Section from '../components/place_holder'
-import A1B1 from '../assets/tile_image/A1B1.png'
-import A1B2 from '../assets/tile_image/A1B2.png'
-import A1B3 from '../assets/tile_image/A1B3.png'
 import SortBar from '../components/sort_bar';
 import NormalButton from '../components/normal_button';
 import UploadModelIcon from '../assets/icon=upload_model.svg'
 import LabIcon from '../assets/icon=lab.svg'
 import DisplayTile from '../components/display_tile';
+import tileData from '../assets/dataSheet.json'
 
 //data -> like data/lib data/history
 //mode -> Like/His F/T
@@ -16,145 +14,13 @@ import DisplayTile from '../components/display_tile';
 function ContentPage(props) {
     const [state, setState] = useState({
         modeHis: false,
-        tileDisplay: false,
-        tileDisplayData: null,
-        data: [
-            {
-                sectionName: "我的收藏",
-                type: 'like',
-                tiles: [
-                    {
-                        order: 1,
-                        name: '釉彩一号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 2,
-                        name: '釉彩二号',
-                        image: A1B2,
-                        selected: false,
-                    },
-                    {
-                        order: 3,
-                        name: '釉彩三号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 4,
-                        name: '釉彩一号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 5,
-                        name: '釉彩二号',
-                        image: A1B2,
-                        selected: false,
-                    },
-                    {
-                        order: 6,
-                        name: '釉彩三号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 7,
-                        name: '釉彩一号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 8,
-                        name: '釉彩二号',
-                        image: A1B2,
-                        selected: false,
-                    },
-                ]
-            },
-            {
-                sectionName: "配釉材质库",
-                type: 'regular',
-                tiles: [
-                    {
-                        order: 1,
-                        name: '釉彩一号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 2,
-                        name: '釉彩二号',
-                        image: A1B2,
-                        selected: false,
-                    },
-                    {
-                        order: 3,
-                        name: '釉彩三号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 4,
-                        name: '釉彩一号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 5,
-                        name: '釉彩二号',
-                        image: A1B2,
-                        selected: false,
-                    },
-                    {
-                        order: 6,
-                        name: '釉彩三号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 7,
-                        name: '釉彩一号',
-                        image: A1B1,
-                        selected: false,
-                    },
-                    {
-                        order: 8,
-                        name: '釉彩二号',
-                        image: A1B2,
-                        selected: false,
-                    },
-                ]
-            }
-        ]
+        data: tileData
     })
 
-    const [displayTileData, setDisplayTileData] = useState({})
-
-    const genSections = () => {
-        const eachSection = state.data.map((each) =>
-            <Section
-                key={each.sectionName}
-                scale={props.scale}
-                data={each}
-                func={sectionSelect}
-                func1={switchMode}
-                eachFunc={singleSelect}
-                eachFunc1={tileDisplay}>
-            </Section>)
-        return (
-            <div
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: props.scale * 18
-                }}
-            >
-                {eachSection}
-            </div>
-        )
-    }
+    const [tileDisplayData, setTileDisplayData] = useState({
+        ifTileDisplay: false,
+        tileDisplayData: null,
+    })
 
     const singleSelect = (sectionName, selfName) => {
         setState(prevState => ({
@@ -214,15 +80,15 @@ function ContentPage(props) {
 
     const tileDisplay = (showState, tileData) => {
         if (showState) {
-            setState({
-                ...state,
-                tileDisplay: true,
+            setTileDisplayData({
+                ...tileDisplayData,
+                ifTileDisplay: true,
                 tileDisplayData: tileData,
             })
         } else {
-            setState({
-                ...state,
-                tileDisplay: false,
+            setTileDisplayData({
+                ...tileDisplayData,
+                ifTileDisplay: false,
                 tileDisplayData: null,
             })
         }
@@ -233,6 +99,30 @@ function ContentPage(props) {
             ...state,
             modeHis: !state.modeHis
         })
+    }
+
+    const genSections = () => {
+        const eachSection = state.data[state.modeHis?0:1].map((each) =>
+            <Section
+                key={each.sectionName}
+                scale={props.scale}
+                data={each}
+                func={sectionSelect}
+                func1={switchMode}
+                eachFunc={singleSelect}
+                eachFunc1={tileDisplay}>
+            </Section>)
+        return (
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: props.scale * 18
+                }}
+            >
+                {eachSection}
+            </div>
+        )
     }
 
     return (
@@ -332,7 +222,7 @@ function ContentPage(props) {
                     </NormalButton>
                 </div>
             </div>
-            <div
+            {tileDisplayData.ifTileDisplay?<div
                     style={{
                         position: 'absolute',
                         top: 0,
@@ -342,9 +232,12 @@ function ContentPage(props) {
                 >
                     <DisplayTile
                         scale={props.scale}
+                        data={tileDisplayData.tileDisplayData}
+                        exitFunc={tileDisplay}
                     >
                     </DisplayTile>
-            </div>
+            </div> : null
+            }
         </div>
     );
 }
