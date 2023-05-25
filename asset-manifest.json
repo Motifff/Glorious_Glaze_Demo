@@ -1,24 +1,35 @@
 {
   "files": {
-    "main.css": "/glorious-glaze/static/css/main.073c9b0a.css",
-    "main.js": "/glorious-glaze/static/js/main.08e67cbf.js",
+    "main.css": "/glorious-glaze/static/css/main.3537802d.css",
+    "main.js": "/glorious-glaze/static/js/main.c2bb7de8.js",
     "static/js/787.1a7dea2e.chunk.js": "/glorious-glaze/static/js/787.1a7dea2e.chunk.js",
-    "static/media/icon=upload.svg": "/glorious-glaze/static/media/icon=upload.fa555f73c44469845c444b805423261f.svg",
+    "static/media/icon=upload.svg": "/glorious-glaze/static/media/icon=upload.dbaa36fe757351b0815cf5fb28a345d1.svg",
+    "static/media/icon=list.svg": "/glorious-glaze/static/media/icon=list.09df50b791fd915c8059414e4c85ada4.svg",
     "static/media/icon=brush.svg": "/glorious-glaze/static/media/icon=brush.d2a364b2811105d7e8049e66848c98c7.svg",
     "static/media/icon=library.svg": "/glorious-glaze/static/media/icon=library.ee81972c750907228ca58cc636f8ac70.svg",
+    "static/media/icon=search.svg": "/glorious-glaze/static/media/icon=search.c9df90e4a68d94f8644fd1e43151f7e1.svg",
     "static/media/icon=light.svg": "/glorious-glaze/static/media/icon=light.f01429094c20c7971e9321341d943426.svg",
+    "static/media/icon=filter.svg": "/glorious-glaze/static/media/icon=filter.d33a3b85d8964cf757deb7522dd354b4.svg",
     "index.html": "/glorious-glaze/index.html",
+    "static/media/icon=history.svg": "/glorious-glaze/static/media/icon=history.e28c7272b72ff7d45bfd11e57876595c.svg",
+    "static/media/icon=delete.svg": "/glorious-glaze/static/media/icon=delete.8a35b3ed46a9c36f859439f7895d92e1.svg",
     "static/media/icon=rotate.svg": "/glorious-glaze/static/media/icon=rotate.e237396920309bfc02286e8bb6060c42.svg",
+    "static/media/icon=lab.svg": "/glorious-glaze/static/media/icon=lab.191a6eb126d9c039d3eac43a110ddf50.svg",
     "static/media/icon=model.svg": "/glorious-glaze/static/media/icon=model.a5ce3a8302b827a23f3c6c13037023ab.svg",
+    "static/media/icon=prefer.svg": "/glorious-glaze/static/media/icon=prefer.91058627762dc93df53fa3bd53150cd7.svg",
+    "static/media/icon=upload_model.svg": "/glorious-glaze/static/media/icon=upload_model.b018fa24af40e053e8485dd65d5aa3c7.svg",
     "static/media/icon=back.svg": "/glorious-glaze/static/media/icon=back.840b693269142981fcd9e25eef0c4ab1.svg",
+    "static/media/icon=down.svg": "/glorious-glaze/static/media/icon=down.c8d32c357890d450e3e9b6d74020a9b8.svg",
+    "static/media/icon=like.svg": "/glorious-glaze/static/media/icon=like.c089f4779d2923959e9c9626c7f3017e.svg",
     "static/media/plus.svg": "/glorious-glaze/static/media/plus.abdc6480153669c49af9a43e20e7824b.svg",
+    "static/media/icon=close.svg": "/glorious-glaze/static/media/icon=close.a486610a7507dde24b9b9f1bf2798937.svg",
     "static/media/minus.svg": "/glorious-glaze/static/media/minus.87b0750108df0fcc0731469c4c68bbd7.svg",
-    "main.073c9b0a.css.map": "/glorious-glaze/static/css/main.073c9b0a.css.map",
-    "main.08e67cbf.js.map": "/glorious-glaze/static/js/main.08e67cbf.js.map",
+    "main.3537802d.css.map": "/glorious-glaze/static/css/main.3537802d.css.map",
+    "main.c2bb7de8.js.map": "/glorious-glaze/static/js/main.c2bb7de8.js.map",
     "787.1a7dea2e.chunk.js.map": "/glorious-glaze/static/js/787.1a7dea2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.08e67cbf.js"
+    "static/css/main.3537802d.css",
+    "static/js/main.c2bb7de8.js"
   ]
 }
