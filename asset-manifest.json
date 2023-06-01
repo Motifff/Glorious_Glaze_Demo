@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/glorious-glaze/static/css/main.3537802d.css",
-    "main.js": "/glorious-glaze/static/js/main.c2bb7de8.js",
+    "main.js": "/glorious-glaze/static/js/main.5dcba567.js",
     "static/js/787.1a7dea2e.chunk.js": "/glorious-glaze/static/js/787.1a7dea2e.chunk.js",
     "static/media/icon=upload.svg": "/glorious-glaze/static/media/icon=upload.dbaa36fe757351b0815cf5fb28a345d1.svg",
     "static/media/icon=list.svg": "/glorious-glaze/static/media/icon=list.09df50b791fd915c8059414e4c85ada4.svg",
@@ -25,11 +25,11 @@
     "static/media/icon=close.svg": "/glorious-glaze/static/media/icon=close.a486610a7507dde24b9b9f1bf2798937.svg",
     "static/media/minus.svg": "/glorious-glaze/static/media/minus.87b0750108df0fcc0731469c4c68bbd7.svg",
     "main.3537802d.css.map": "/glorious-glaze/static/css/main.3537802d.css.map",
-    "main.c2bb7de8.js.map": "/glorious-glaze/static/js/main.c2bb7de8.js.map",
+    "main.5dcba567.js.map": "/glorious-glaze/static/js/main.5dcba567.js.map",
     "787.1a7dea2e.chunk.js.map": "/glorious-glaze/static/js/787.1a7dea2e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3537802d.css",
-    "static/js/main.c2bb7de8.js"
+    "static/js/main.5dcba567.js"
   ]
 }
